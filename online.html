@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<lhead>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clodate Online</title>
@@ -8,8 +8,26 @@
     <script src="https://kit.fontawesome.com/4aedf8f78b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- <div id="header"> -->
-        <div class="container">
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Profile</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contact</button>
+        </li>
+      </ul>
+
+
+    <div id="header">
+        <div class="navbars">
             <nav>
                 <div class="logo">
                     <h1>My Port<span>folio</span></h1>
@@ -20,25 +38,38 @@
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark"></i>
                 </ul>
+                <i class="fa-solid fa-bars"></i>
             </nav>
-            <div class="header-text">
-                <p>Hi, Its Me <span>Clodate</span>Mnisi</p>
-                    <h1>I am a Software Developer</h1>
-                    <p>I love what I do, I do what I love, and I thrive in all i do</p>
-            </div>
         </div>
+        </div>
+    
+            <div class="header-text">
+                <p>Hi, I am <span>Clodate</span> Mnisi</p>
+                    <h2>A Software Developer</h2>
+                    <p>I love what I do, I do what I love, and I thrive in all I do</p>
+            </div>
+            <div class="home-image">
+                <img src="laptop.jpg">
+            </div>
+
       
 
-        <!-- about -->
+        <!-- about --
         <div id="about">
             <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
+                <h1 class="sub-title">About<span> Me</span><br></h1>
+                <!-- <div class="row"> -->
+                    <!-- <div class="about-col-1">
                         <img src="ME.jpg">
-                    </div>
+                    </div> --
                     <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
+                        
+                        <div class="row">
+                        <div class="about-col-1">
+                            <img src="images/me.jpg">
+                        </div>
                         <p>I am ambitious and honest, I see opportunities where others may see  challenges
                             I am self-motivated and disciplined. My friends often tell me that I should stop thriving for perfection.
                             I have fallen in love with my work, it is a part of who I am and no longer identify as work
@@ -86,33 +117,201 @@
                 </div>
             </div>
         </div>
+        ->
+
 
         <!-- skills -->
         <div class="skills">
             <div class="container">
-                <h1 class="sub-title">Skills</h1>
+                <h1 class="sub-title">About Me</h1>
                 <div class="Skills-list">
-                    <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>Web Design</h2>
-                        <p>I do web design</p>
-                        <a href="#">Read more</a>
-                    </div>
-                    <div>
-                        <h2>UI/UX Design</h2>
-                        <p>I do web design</p>
-                        <a href="#">Read more</a>
-                    </div>
+                    
                     <div>
                         <i class="fa-solid fa-school"></i>
                         <h2>App Design</h2>
                         <p>I do web design</p>
+                        <div class="row">
+                            <div class="about-col-1">
+                                <img src="ME.jpg">
+                            </div>
+                            <p>I am ambitious and honest, I see opportunities where others may see  challenges
+                                I am self-motivated and disciplined. My friends often tell me that I should stop thriving for perfection.
+                                I have fallen in love with my work, it is a part of who I am and no longer identify as work
+                                I am very honest and like to express myself for people to know the real me. I am  well capable of 
+                                working under pressure to meet deadline. I am a  team-player and embrace partaking
+                                on leadership roles. I am very analytic and observative. I deliver quality work and take caution 
+                                in satisfying my clients.</p>
+    
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick ="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick=" opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                    <li><span>Web Development</span><br>Web app Development</li>
+                                    <li><span>App Development</span><br>Building Android/iOS apps</li>
+    
+    
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                                    <li><span>2019 - 2021 </span><br>Lead at Startup</li>
+                                    <li><span>2017 -2019</span><br>BBA from ISM Bangalore</li>
+                                    <li><span>2016 -2017 </span><br>Intership at ekart eCommerce at Coin Digital Ltd.</li>
+                                    
+    
+    
+                                </ul>
+                            </div>
+    
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+                                    <li><span>2016</span><br>MBA from MIT Bangalore</li>
+                                    <li><span>2014</span><br>BBA from ISM Bangalore</li>
+    
+    
+                                </ul>
+                            </div>
+                        </div>
                         <a href="#">Read more</a>
                     </div>
                 </div>
             </div>
         </div>
 
+        <style>
+            .image-container {
+              position: relative;
+              width: 200px;
+              height: 200px;
+              overflow: hidden;
+            }
+          
+            .image-container img {
+              width: 100%;
+              height: auto;
+              transition: filter 0.3s ease-in-out;
+            }
+          
+            .image-container:hover img {
+              filter: greenscale(100%);
+            }
+          </style>
+          <title>Image Hover Effect</title>
+          </head>
+          <body>
+          <div class="image-container">
+            <img src="your-image.jpg" alt="Image">
+          </div>
+         
+        <div class="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Skills</h1>
+                <p>I hold profound work ethics that guides me in creating quality digital frameworks utilizing one or more of different programming syntaxes such as the below</p>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="icons/python.jpg">
+                        <div class="layer">
+                            <h3>Media App</h3>
+                            <p>This is the descrition of my website</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="icons/bootstrap.jpg">
+                        <div class="layer">
+                            <h3>Media App</h3>
+                            <p>This is the descrition of my website</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="icons/css.jpg">
+                        <div class="layer">
+                            <h3>Media App</h3>
+                            <p>This is the descrition of my website</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="icons/react.jpg">
+                        <div class="layer">
+                            <h3>Media App</h3>
+                            <p>This is the descrition of my website</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="icons/htmll.png">
+                        <div class="layer">
+                            <h3>Media App</h3>
+                            <p>This is the descrition of my website</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="icons/js.png">
+                        <div class="layer">
+                            <h3>Media App</h3>
+                            <p>This is the descrition of my website</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="icons/java.png">
+                        <div class="layer">
+                            <h3>Media App</h3>
+                            <p>This is the descrition of my website</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="icons/sql.png">
+                        <div class="layer">
+                            <h3>Media App</h3>
+                            <p>This is the descrition of my website</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="icons/node.png">
+                        <div class="layer">
+                            <h3>Media App</h3>
+                            <p>This is the descrition of my website</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="icons/php.png">
+                        <div class="layer">
+                           <h3>Media App</h3>
+                            <p>This is the descrition of my website</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <style>
+                        .work {
+                          display: grid;
+                          grid-template-columns: repeat(2, 1fr);
+                          gap: 20px; /* Adjust gap between columns and rows */
+                        }
+                        
+                        .work img {
+                          width: 100%; /* Ensure images take up full width of columns */
+                        }
+                        .work:hover img {
+                          filter: grayscale(100%);
+                        }
+                      </style>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
     <!-- Portfolio -->
     <div class="portfolio">
         <div class="container">
@@ -129,12 +328,13 @@
                 <div class="work">
                     <img src="point.jpg">
                     <div class="layer">
-                        <h3>Media App</h3>
+                       <h3>Media App</h3>
                         <p>This is the descrition of my website</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
+            <a href="#" class="btn">See more</a>
         </div>
     </div>
     <!-- contact -->
@@ -147,11 +347,12 @@
                     <p><iconify-icon icon="gg:phone"></iconify-icon>0677028907</p>
                     <div class="social-icons">
                         <a href="https://facebook.com/"><iconify-icon icon="logos:facebook"></iconify-icon></a>
-                        <a href=""><iconify-icon icon="skill-icons:instagram"></iconify-icon></a>
-                        <a href=""><iconify-icon icon="skill-icons:linkedin"></iconify-icon></a>
-                        <a href=""><iconify-icon icon="icon-park:github"></iconify-icon></a>
+                        <a href="https://www.instagram.com/flawapeace_clodate/"><iconify-icon icon="skill-icons:instagram"></iconify-icon></a>
+                        <a href="https://www.linkedin.com/in/iamclodate/"><iconify-icon icon="skill-icons:linkedin"></iconify-icon></a>
+                        <a href="https://github.com/IamClodate"><iconify-icon icon="icon-park:github"></iconify-icon></a>
                     </div>
                     <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    
                 </div>
                 <div class="contact-right">
                     <form>
@@ -159,6 +360,7 @@
                          <input type="email" name="email" placeholder="Email Address" required>
                          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                          <button type="submit" class="btn btn2">Submit</button>
+                         <!--  btn2 -->
                     </form>
                 </div>
             </div>
@@ -168,6 +370,7 @@
             <a href=""><iconify-icon icon="mingcute:arrow-up-fill"></iconify-icon></a>
         </div>
     </div>
+</div>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
