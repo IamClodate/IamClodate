@@ -10,7 +10,7 @@
 }
 :root {
     --first-color:brown;
-    --second-color:black;
+    --second-color:purple;
     --text-color:white;
     --main-color:grey;
 }
@@ -168,7 +168,7 @@ section {
 .home-sci a:hover::before {
     width: 100%;
 }
-.home-image {
+/* .home-image {
     position: absolute;
     top: 0;
     right: 0;
@@ -176,7 +176,22 @@ section {
     height: 100%;
     background: transparent;
     border: 2px solid red;
-    transition: 3s;
+    transition: 3s; */
+    
+.home-image {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.home-img img {
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
 }
 .home-image:hover {
     background: var(--first-color);
@@ -463,6 +478,48 @@ form .btn2{
     color: grey;
 }
 
+/* footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-color);
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+.footer-iconTop a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    z-index: 1;
+    overflow: hidden;
+}
+.footer-iconTop a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--second-color);
+    z-index: -1;
+    transition: .5s;
+}
+.footer-iconTop a:hover::before {
+    width: 100%;
+}
+.footer-iconTop a i {
+    font-size: 2.4rem;
+}
 /* css for small screens
 nav.fa-regular {
     display: none;
