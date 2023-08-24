@@ -168,44 +168,32 @@ section {
 .home-sci a:hover::before {
     width: 100%;
 }
-/* .home-image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45%;
-    height: 100%;
-    background: transparent;
-    border: 2px solid red;
-    transition: 3s; */
-    
-/* .home-image {
+
+.hme-img {
     position: relative;
+    padding-left: 8rem;
     width: 25rem;
     height: 25rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 3s;
-
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%);
 }
-.home-img img {
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    border: .2rem solid var(--text-color);
-
+.hme-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
 }
-/* .home-image:hover {
-    background: var(--first-color);
-    opacity: .8;
-} */
-
-/* .home-img .circle-spin {
-    position: absolute; */
-    /* top: 50%;
-    left: 50%; */
-    /* transform: translate(-50%, -50%) rotate(0);
+.hme-img .circle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -213,66 +201,17 @@ section {
     border-bottom: .2rem solid var(--second-color);
     border-left: .2rem solid var(--main-color);
     border-right: .2rem solid var(--main-color);
-} */ */
-/* image */
-
-/* .home {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;     You can adjust this to your preferred height */
-    /* padding: 0 5%; Adjust horizontal padding as needed */ */
-    /* background-color: #f0f0f0; Set your preferred background color  */
-/* } */
-
-
-.home-img{
-    position: relative; 
-    width: 50px; /*Adjust this to control the circle size */
-    height: 50px; /*Adjust this to control the circle size */
-    border-radius: 50%;
-    overflow: hidden;
-}
-
- .home-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: border 0.3s ease;
-}
-
-.circle-spin {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border: 5px solid transparent;
-    border-top-color: #3498db; /*Change color as needed*/ 
-    border-radius: 50%;
     animation: spin 3s linear infinite;
-    transition: border 0.3s ease;
-}
-
-.home-img:hover img {
-       border: 5px solid #3498db; /*Change color as needed  */ 
-}
-
-.home-img:hover .circle-spin {
-     border-top-color: #e74c3c; /* Change color as needed  */
 }
 
 @keyframes spin {
     0% {
-        transform: rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0);
     }
     100% {
-        transform: rotate(360deg);
+        transform: translate(-50%, -50%)rotate (360deg);
     }
 }
-
-
-/* image */
-
 .navbars{
     position: fixed;
     width: 100%;
@@ -313,6 +252,7 @@ btn:hover {
 span {
     color: var(--main-color);
 }
+
 .about-img {
     position: relative;
     width: 25rem;
@@ -321,9 +261,13 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    left: 5%;
+    
 }
 .about-img img {
-    width: 90%;
+    height: 100%;
+    width: 100%;
     border-radius: 50%;
     border: .2rem solid var(--main-color);
 }
@@ -371,11 +315,18 @@ span {
 /* skills */
 #skills {
     padding: 30px 0;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, 50%);
 }
 .Skills-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
-  grid-gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
+  grid-gap: 40px; */
   margin-top: 50px;
 }
 .Skills-list div {
@@ -385,6 +336,9 @@ span {
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
+    margin: 10px;
+    width: calc(-50% - 20px);
+    box-sizing: border-box;
 }
 
 .Skills-list div h2 {
@@ -401,7 +355,7 @@ span {
     display: inline-block;
 }
 .Skills-list div:hover{
-    background: g;
+    background: var(--second-color);
     transform: translateY(-10px);
 }
 
@@ -411,7 +365,7 @@ span {
 }
 .work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
+    grid-template-columns: repeat(5, minmax(0, 1fr));  
     grid-gap: 40px;
     margin-top: 50px;
 }
