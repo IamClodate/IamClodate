@@ -87,13 +87,7 @@ section {
     font-size: 1.6rem;
     margin: 2rem 0 4rem;
 }
-.btn-box {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 34.5rem;
-    height: 5rem;
-}
+
 .btn-box .btn {
     position: relative;
     display: inline-flex;
@@ -302,8 +296,9 @@ span {
     background: var(--second-color);
 }
 
-/* education */
-.education {
+
+
+#skills {
    display: flex; 
    justify-content: center;
    align-items: center;
@@ -311,53 +306,21 @@ span {
    min-height: auto;
    padding-bottom: 5rem;
 }
-
-/* skills */
-#skills {
-    padding: 30px 0;
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translate(0, 50%);
+.work {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
-.Skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
-  grid-gap: 40px; */
-  margin-top: 50px;
+.work img {
+  width: 100%;
+  height: 100%;
+  
 }
-.Skills-list div {
-    background: var(--first-color);
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
-    margin: 10px;
-    width: calc(-50% - 20px);
-    box-sizing: border-box;
+.work:hover img {
+  filter: grayscale(100%);
 }
 
-.Skills-list div h2 {
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
 
-.Skills-list div a {
-    text-decoration: none;
-    color: var(--second-color);
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-}
-.Skills-list div:hover{
-    background: var(--second-color);
-    transform: translateY(-10px);
-}
 
 /* portfolio */
 #portfolio {
@@ -373,6 +336,9 @@ span {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px
 }
 .work img {
     width: 100%;
@@ -380,6 +346,7 @@ span {
     display: block;
     transition: transform 0.5s;
 }
+
 .layer {
     width: 100%;
     height: 0;
@@ -416,9 +383,13 @@ span {
 .work:hover img {
     transform: scale(1.1);
 }
+.work:hover img {
+    filter: grayscale(100%);
+  }
 .work:hover .layer {
     height: 100%;
 }
+
 .btn {
     display: block;
     margin: 50px auto;
@@ -550,6 +521,7 @@ form .btn2{
 .footer-iconTop a i {
     font-size: 2.4rem;
     color: var(--first-color);
+    transition: .5s;
 }
 /* css for small screens
 nav.fa-regular {
