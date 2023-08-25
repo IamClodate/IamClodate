@@ -22,6 +22,11 @@ body {
     background: var(--first-color);
     color: var(--text-color);
 }
+.heading {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
 .header {
     position: fixed;
     top: 0;
@@ -283,14 +288,65 @@ span {
   filter: grayscale(100%);
 }
 
-
-
-/* portfolio */
-#portfolio {
-   /* padding: 50px 0; */
-   padding: 14px 50px;
-   
+/* new portfolio */
+.portfolio {
+    min-height: auto;
+    padding-bottom: 7rem;
+    background: var(--second-color);
 }
+.portfolio .portfolio-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.portfolio-row .portfolio-column {
+    flex: 1 1 40rem;
+
+}
+.portfolio-column .title {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+}
+.portfolio-box .portfolio-content {
+    position: relative;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+}
+.portfolio-content .progress {
+    padding: 1rem 0;
+}
+.portfolio-content progress h3 {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio-content .progress h3 span {
+    color: var(--text-color);
+}
+.portfolio-content .progress .bar {
+    height: 2.5rem;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+    padding: .5rem;
+    margin: 1rem 0;
+}
+.portfolio-content .progress .bar span {
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: var(--first-color);
+}
+/* portfolio */
+/* #portfolio {
+    display: flex; 
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   min-height: auto;
+   padding-bottom: 5rem;
+   
+} */
 .work-list {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));  
@@ -370,6 +426,10 @@ span {
     background: var(--second-color);
 }
 /* contact */
+.contact {
+    min-height: auto;
+    padding-bottom: 7rem;
+}
 .contact-left{
     flex-basis: 35%;
 
