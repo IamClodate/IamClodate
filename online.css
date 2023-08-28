@@ -4,6 +4,7 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     text-decoration: none;
+    color: #fff;
     border: none;
     outline: none;
     scroll-behavior: smooth;
@@ -22,8 +23,11 @@ html {
     overflow-x:hidden;
 }
 body {
-    background-image: url(backg/imag1.jpg);
-    color: var(--text-color);
+    background-image: url(backg/imag8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* color: var(--text-color); */
 }
 .heading {
     font-size: 5rem;
@@ -56,6 +60,9 @@ body {
 .navbar a:hover,
 .navbar a.active {
     color:var(--first-color);
+}
+.btn {
+    background: var(--second-color);
 }
 #menu-icon {
     font-size: 3.6rem;
@@ -293,7 +300,6 @@ span {
 .portfolio {
     min-height: auto;
     padding-bottom: 7rem;
-    background: var(--second-color);
 }
 .portfolio .portfolio-row {
     display: flex;
