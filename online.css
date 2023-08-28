@@ -464,13 +464,14 @@ span {
     min-height: auto;
     padding-bottom: 7rem;
 }
-/* .contact-row {
+.contact-row {
     display: flex;
-} */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 .contact-left{
-    /* flex-basis: 35%; */
-    
-    margin-left: 0%;
+   width: 400px;
 
 }
 .contact-right{
