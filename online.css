@@ -23,7 +23,7 @@ html {
     overflow-x:hidden;
 }
 body {
-    background-image: url(backg/imag8.jpg);
+    background-image: url(backg/realimg1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -464,17 +464,18 @@ span {
     min-height: auto;
     padding-bottom: 7rem;
 }
-.contact-row {
+/* .contact-row {
     display: flex;
-}
+} */
 .contact-left{
     /* flex-basis: 35%; */
-    margin-right: auto;
+    
+    margin-left: 0%;
 
 }
 .contact-right{
     /* flex-basis: 60%; */
-    margin-left: auto;
+    margin-left: 30%;
 }
 .contact-left p{
     margin-top: 30px;
@@ -527,7 +528,7 @@ form input,form textarea{
 form .btn2{
     padding: 14px 60px;
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: .2rem;
     cursor: pointer;
     border-radius: 6px;
 }
