@@ -8,7 +8,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    border: #fff solid;
+    /* border: #fff solid; */
 }
 :root {
     --first-color:yellow ;
@@ -512,8 +512,15 @@ span {
     background: var(--second-color);
     padding: 14px 60px;
 }
+
 .contact-right form{
     width:100%
+}
+.contact-right h3 {
+    text-decoration: none;
+    font-size: 20px;
+    
+
 }
 form input,form textarea{
     width:100%;
@@ -532,6 +539,7 @@ form .btn2{
     margin-top: .2rem;
     cursor: pointer;
     border-radius: 6px;
+    margin-left: 119px;
 }
 .copyright p{
     width: 100%;

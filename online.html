@@ -62,7 +62,11 @@
 
     <div class="about-content">
         <h3>FullStack website Developer</h3>
-        <p>This is my full story about me .his is my full story about me.his is my full story about me.his is my full story about me.v.his is my full story about me.his is my full story about me</p>
+        <h3>Its Time to Know Me</h3>
+        <p>I am outgoing, dedicated, and open-minded. I get across to people and adjust to changes with ease. I believe that a person should work on developing their professional skills and learning new things all the time. Currently, I am looking for new career opportunities my current job position cannot provide</p>
+        <p>My interests</p>
+        <p>My VALUES</p>
+        <P>Tell You more about Me</P>
         <div class="btn-box btns">
             <p>Read more</p>
         </div>
@@ -225,12 +229,12 @@
                     
                 </div>
                 <div class="contact-right">
-                    <h3>Send me an email</h3>
-                    <form action="#">
+                    <h3>Email me:</h3>
+                    <form onsubmit="sendEmail();reset()">
                         <input type="text" name="Name" placeholder="Your Name" required>
                          <input type="email" name="email" placeholder="Email Address" required>
                          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                         <button type="submit" class="btn btn2">Submit</button>
+                         <button type="submit" class="btn btn2">Enter</button>
                         
                     </form>
                 </div>
@@ -245,6 +249,25 @@
         <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
     </div>
 </footer>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail()
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "clodatemnisi@gmail.com",
+        Password : "IamBeautiful",
+        To : 'Clodate.Mnisi@younglings.africa',
+        From : document.getElementById("email").value,
+        Subject : "Contact Form Enquiry",
+        Body : "Name :" +document.getElementById("name").value
+            + "<br> Email:" + document.getElementById("email").value
+            + "<br> Phone no:" +document.getElementById("phone").value
+            + "<br> Message:" +document.getElementById("message").value
+    }).then(
+  message => alert("Message sent successfully")
+);
+</script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
