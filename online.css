@@ -593,7 +593,7 @@ section {
 /* contact */
 .contact {
     min-height: auto;
-    padding-bottom: 7rem;
+    padding-bottom: 7rem;font-size: ;
 }
 .contact-row {
     display: flex;
