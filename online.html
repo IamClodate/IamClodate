@@ -27,6 +27,7 @@
     </header>
 
     <section class="home" id="home">
+        
 
 
         <div class="home-content">
@@ -35,9 +36,7 @@
             <div class="text-animate">
                 <h3> A FullStack Software Developer</h3>
             </div>
-            <p>Quality work is guaranteed,<br>
-                My self etiquette drives me to deliver <br>
-                quality work, Always! <br><br></p>
+            <p>"Quality work is always guaranteed. <br>My strong work ethic drives me to consistently deliver nothing less than excellence." <br><br></p>
 
 
         </div>
@@ -71,31 +70,29 @@
             <div class="circle">
 
                 <span class="circle-animate">
-                    <p class="glamour-hover">I am outgoing, dedicated, and open-minded.
-                        I get across to people and adjust to changes with
-                        ease. I believe that a person should work on developing their professional skills and learning
-                        new things all the time. Currently, I am looking for new career
-                        opportunities my current job position cannot provide</p>
+                    <p class="glamour-hover">1. Professional Summary:
+                        I am a dedicated and highly professional individual who approaches work with unwavering commitment to excellence. My ambition and practical mindset allow me to identify opportunities where others may see challenges. I am known for my down-to-earth demeanor and the ease with which I collaborate with colleagues. My self-driven nature and enthusiasm propel me to continuously strive for personal and professional growth.</p>
                 </span>
             </div>
             <div class="circle">
 
                 <span class="circle-animate">
-                    <p class="glamour-hover">My interests
-                        <br>jiodsuopjklsujkcnsicopni-aideiai[pmxnklzo-[saodouaonxlkp[apoo</p>
+                    <p class="glamour-hover">2. Interests:
+                        I have a genuine passion for problem-solving and a keen interest in leveraging software development to address real-world issues. I find great satisfaction in listening to people's problems and using technology to provide effective solutions. This interest aligns with my belief that I am well-positioned to contribute to solving some of the world's most pressing challenges, particularly through the innovative advancement of 5G technology.</p>
                 </span>
             </div>
             <div class="circle">
 
                 <span class="circle-animate">
-                    <p class="glamour-hover">My VALUES <br>jkhiodjokjfopddilffjiodufkbnkujkdkjfhdilsdjidioidjjoioikdjjd
-                    </p>
+                    <p class="glamour-hover">3. Goals:
+                        My primary goal is to harness my technical skills and creative problem-solving abilities to drive positive change through software development. I aspire to make a meaningful impact by revolutionizing the capabilities of 5G technology. Additionally, I am committed to continuous learning and growth, both personally and professionally, to stay at the forefront of my field and expand my sphere of influence.</p>
                 </span>
             </div>
             <div class="circle">
 
                 <span class="circle-animate">
-                    <p class="glamour-hover">Tell You more aboutuidhsifjdjkshfjhdjkhsfkjhfjkjhkfjhfkjklkjjjjjjjd Me</p>
+                    <p class="glamour-hover">4. Motivation and Values:
+                        I am motivated by a genuine desire to help others and improve the world through technology. My values include a strong work ethic, integrity, and a relentless pursuit of excellence. I believe that by combining my skills with my passion for solving problems, I can contribute to addressing global challenges and advancing technology to benefit society.</p>
                 </span>
             </div>
         </div>
@@ -108,17 +105,14 @@
     <section class="education" id="education">
         <h3 class="heading">My Skills</h3>
 
-        <!-- <div class="education-row"> -->
             <div class="education-column">
-                <h3 class="title">My Skills 1</h3>
+                <h3 class="title">My Expertise :</h3>
 
                 <div class="education-box">
                     <div class="educatiion-content">
                         <div class="content">
                             <div class="container">
-                                <h1 class="sub-title">My Skills</h1>
-                                <p>I hold profound work ethics that guides me in creating quality digital frameworks
-                                    utilizing one or more of different programming syntaxes such as the below</p>
+                                <p class="sub-title">I uphold a strong work ethic that serves as my guiding principle in crafting high-quality digital frameworks. I excel in utilizing various programming languages and syntaxes, including the following:</p>
                                 <div class="work-list">
                                     <div class="work">
                                         <img src="icons/python.jpg">
@@ -169,8 +163,8 @@
                                     <div class="work">
                                         <img src="icons/js.png">
                                         <div class="layer">
-                                            <h3>Media App</h3>
-                                            <p>This is the descrition of my website</p>
+                                            <h3>JavaScript</h3>
+                                            <p>JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.</p>
                                             <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                         </div>
                                     </div>
@@ -228,7 +222,7 @@
         <h3 class="heading">My Portfolio</h3>
         <div class="portfolio-row">
 
-            <h1 class="sub-title">Latest Projects</h1>
+            <h1 class="sub-title"> My Recent Endeavors</h1>
             <div class="work-list" id="port-container">
                 <div class="work" id="my-image">
                     <div id="image1"><img src="printdcreen/myweb.png"></div>
@@ -262,7 +256,7 @@
 
         <div class="contact-row">
             <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
+                <h1 class="sub-title">Connect with me :</h1>
                 <p><iconify-icon icon="fontisto:email"></iconify-icon>clodatemnisi@gmail.com</p>
                 <p><iconify-icon icon="gg:phone"></iconify-icon>0677028907</p>
                 <div class="social-icons">
@@ -278,11 +272,25 @@
             </div>
             <div class="contact-right">
                 <h3>Let's Chat :</h3>
-                <form onsubmit="sendEmail();reset()">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Email Address" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Enter</button>
+                <form>
+                    <div class="input-group">
+                        <input type="text" name="Name" placeholder="Your Name" id="contact-name" onkeyup="validateName()">
+                        <span id="name-error"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" name="email" placeholder="Email Address" id="=contact-email" onkeyup="validateEmail()">
+                        <span id="email-error"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <textarea name="Message" rows="6" placeholder="Your Message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                        <span id="message-error"></span>
+                    </div>
+                    
+                    <!-- <button type="submit" class="btn btn2">Enter</button> -->
+                    <button onclick="return ValidateForm()" class="btn btn2">Enter</button>
+                    <span id="submit-error"></span>
 
                 </form>
             </div>
@@ -298,25 +306,10 @@
         </div>
     </footer>
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail()
-        Email.send({
-            Host: "smtp.gmail.com",
-            Username: "clodatemnisi@gmail.com",
-            Password: "IamBeautiful",
-            To: 'Clodate.Mnisi@younglings.africa',
-            From: document.getElementById("email").value,
-            Subject: "Contact Form Enquiry",
-            Body: "Name :" + document.getElementById("name").value
-                + "<br> Email:" + document.getElementById("email").value
-                + "<br> Phone no:" + document.getElementById("phone").value
-                + "<br> Message:" + document.getElementById("message").value
+    <script src="online.js"></script>
 
-        }).then(
-            message => alert("Message sent successfully")
-        );
-    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+   
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
