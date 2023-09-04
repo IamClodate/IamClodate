@@ -47,11 +47,28 @@ function validateMessage() {
     return true;
 }
 
-function validateForm(){
-    if(!validateName() || !validateEmail() || !validateMessage()){
+// function validateForm(){
+
+//     if(!validateName() || !validateEmail() || !validateMessage()){
+//         submitError.style.display = 'block';
+//         submitError.innerHTML = 'Please fix error to submit';
+//         setTimeout(function(){submitError.style.display = 'none';}, 3000);
+//         return false;
+//     }
+// }
+
+function validateForm() {
+    var isNameValid = validateName();
+    var isEmailValid = validateEmail();
+    var isMessageValid = validateMessage();
+    
+    if (!isNameValid || !isEmailValid || !isMessageValid) {
         submitError.style.display = 'block';
-        submitError.innerHTML = 'Please fix error to submit';
-        setTimeout(function(){submitError.style.display = 'none';}, 3000);
+        submitError.innerHTML = 'Please fix errors to submit';
+        setTimeout(function () {
+            submitError.style.display = 'none';
+        }, 3000);
         return false;
     }
+    return true;
 }
