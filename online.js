@@ -85,6 +85,16 @@ document.addEventListener('DOMContentLoaded', function() {
 //     return true;
 // }
 
+// toggle icon navbar
+Let menuIcon = document.querySelector('menu-icon');
+Let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
+
+
 /* scroll sections active Links */
 
 Let sections = document.querySelectorAll('section');
@@ -106,5 +116,11 @@ window.onscroll = () => {
     });
 
 // sticky navbar
-Let header = document.querySelector
+Let header = document.querySelector('header');
+
+header.classList.toggle('sticky', window.scrollY > 100);
+
+// remove toggle icon  andnavbar when click navbar
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
 };

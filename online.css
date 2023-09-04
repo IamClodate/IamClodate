@@ -809,12 +809,20 @@ form .btn2{
         background: var(--second-color);
         border-top: .1rem solid rgba(0, 6, 0, 0);
         box-shadow: 0 .5rem 1rem rgba(0, 6, 0, 0);
+        display: none;
     }
 
+    .navbar.active {
+        display: block;
+    }
     .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
+    }
+
+    .home {
+        flex-direction: column;
     }
 }
 /* css for small screens
