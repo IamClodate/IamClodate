@@ -17,7 +17,7 @@ function validateName(){
         return false;
     }
     
-    nameError.innerHTML = '<i class="fa-solid fa-check"></i>';
+    nameError.innerHTML = '<i class="fas fa-check-circle"></i>';
     return true;
 }
 
@@ -68,22 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-// function validateForm() {
-//     var isNameValid = validateName();
-//     var isEmailValid = validateEmail();
-//     var isMessageValid = validateMessage();
-    
-//     if (!isNameValid || !isEmailValid || !isMessageValid) {
-//         submitError.style.display = 'block';
-//         submitError.innerHTML = 'Please fix errors to submit';
-//         setTimeout(function () {
-//             submitError.style.display = 'none';
-//         }, 3000);
-//         return false;
-//     }
-//     return true;
-// }
 
 // toggle icon navbar
 var menuIcon = document.querySelector('#menu-icon');
