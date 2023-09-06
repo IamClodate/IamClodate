@@ -155,32 +155,12 @@ section {
     transition: transform 0.5s;
 }
 
-
-
 .home-sci a:hover{
     transform: translateY(-5px);
     border: 1rem solid var(--first-color);
 }
 
 
-/* .about-img {
-    position: relative;
-    width: 25rem;
-    height: 25rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* position: absolute; */
-    /* left: 5%;
-} */
-
-/* .about-img img {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    border: .2rem solid var(--main-color);
-} */
 .hme-img {
     position: relative;
     padding-left: 8rem;
@@ -193,7 +173,7 @@ section {
     position: absolute;
     top: 50%;
     right: 5%;
-    /* transform: translate(0, -50%); */
+  
 }
 .hme-img img {
     height: 100%;
@@ -224,29 +204,6 @@ section {
 }
 
 
-/* .hme-img .circle-spin {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(0);
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border-top: .2rem solid var(--second-color);
-    border-bottom: .2rem solid var(--second-color);
-    border-left: .2rem solid var(--main-color);
-    border-right: .2rem solid var(--main-color);
-    animation: spin 3s linear infinite;
-}
-
-@keyframes spin {
-    0% {
-        transform: translate(-50%, -50%) rotate(0);
-    }
-    100% {
-        transform: translate(-50%, -50%)rotate (360deg);
-    }
-} */
 .navbars{
     position: fixed;
     width: 100%;
@@ -395,9 +352,6 @@ section {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
-
-
-
 
 .circle-spin {
     position: absolute;
@@ -734,7 +688,6 @@ section {
 }
 
 
-
 .social-icons a:hover{
     transform: translateY(-5px);
     border: 1rem solid var(--first-color);
@@ -749,6 +702,8 @@ section {
 
 .contact-right form{
     width:100%;
+    max-height: 500px;
+    
 }
 .contact-right h3 {
     text-decoration: none;
@@ -766,6 +721,7 @@ form input,form textarea{
     color:var(--text-color);
     font-size: 18px;
     border-radius: 6px;
+    
 }
 form .btn2{
     padding: 14px 60px;
@@ -777,7 +733,7 @@ form .btn2{
 }
 
 .input-group span {
-    position: absolute;
+    position: relative;
     bottom: 12px;
     right: 17px;
     font-size: 14px;
