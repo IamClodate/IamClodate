@@ -116,8 +116,9 @@ section {
 }
     
 .home-content p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 2rem 0 4rem;
+    text-align: center;
 }
 
 
@@ -162,6 +163,24 @@ section {
 }
 
 
+/* .about-img {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* position: absolute; */
+    /* left: 5%;
+} */
+
+/* .about-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
+} */
 .hme-img {
     position: relative;
     padding-left: 8rem;
@@ -174,7 +193,7 @@ section {
     position: absolute;
     top: 50%;
     right: 5%;
-    transform: translate(0, -50%);
+    /* transform: translate(0, -50%); */
 }
 .hme-img img {
     height: 100%;
@@ -183,7 +202,29 @@ section {
     border: .2rem solid var(--main-color);
     
 }
-.hme-img .circle-spin {
+
+.circle-spin {
+    position: relative;
+    /* top: 50%; */
+    /* left: 50%; */
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: circleRotate 8s linear infinite;
+}
+
+@keyframes circleRotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+/* .hme-img .circle-spin {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -205,7 +246,7 @@ section {
     100% {
         transform: translate(-50%, -50%)rotate (360deg);
     }
-}
+} */
 .navbars{
     position: fixed;
     width: 100%;
@@ -461,6 +502,15 @@ section {
     font-size: 1.8rem; 
     text-align: center;
 
+}
+
+/* .education-column h3 {
+    font-size: 2rem; 
+    text-align: center;
+} */
+.portfolio-row h2 {
+    font-size: 2rem;
+    text-align: center;
 }
 .portfolio .portfolio-row {
     display: flex;

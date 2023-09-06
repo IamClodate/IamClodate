@@ -86,8 +86,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // }
 
 // toggle icon navbar
-Let menuIcon = document.querySelector('#menu-icon');
-Let navbar = document.querySelector('.navbar');
+var menuIcon = document.querySelector('#menu-icon');
+var navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
@@ -97,15 +97,15 @@ menuIcon.onclick = () => {
 
 /* scroll sections active Links */
 
-Let sections = document.querySelectorAll('section');
-Let navLinks = document.querySelectorAll('header nav a');
+var sections = document.querySelectorAll('section');
+var navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
     sections.forEach(sec => {
-        Let top = window.scrollY;
-        Let offset = sec.offsetTop - 150;
-        Let height = sec.offsetHeight;
-        Let id = sec.getAttribute('id');
+        var top = window.scrollY;
+        var offset = sec.offsetTop - 150;
+        var height = sec.offsetHeight;
+        var id = sec.getAttribute('id');
 
         if(top >= offset && top < offset + height) {
             navLinks.forEach(links => {
@@ -116,7 +116,7 @@ window.onscroll = () => {
     });
 
 // sticky navbar
-Let header = document.querySelector('header');
+var header = document.querySelector('header');
 
 header.classList.toggle('sticky', window.scrollY > 100);
 
@@ -138,11 +138,30 @@ ScrollReveal().reveal('home-content h3, .about-img', { origin: 'left'});
 ScrollReveal().reveal('home-content p, .about-content', { origin: 'right'});
 
 // typed js
-const typed = new Typed('.multiple-text', {
-    strings: ['I','am','Your','FullStack Developer'],
+const typed = new Typed('.heading', {
+    strings: ['Welcome','to','my','WorkSpace'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
     loop: true
 });
 
+function formSubmit(e)
+
+             {
+
+                 e.preventDefault();
+
+                 //Get values of each input field from the form
+
+                 let email = document.querySelector('#email').value;
+
+                 let message = document.querySelector('#message').value;
+
+                 sendMessage(email,message);
+
+             }
+
+           
+
+             
