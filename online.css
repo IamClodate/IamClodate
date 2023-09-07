@@ -31,11 +31,23 @@ body {
     background-position: center;
     /* color: var(--text-color); */
 }
+/* .heading {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+} */
+
 .heading {
     font-size: 5rem;
     margin-bottom: 3rem;
     text-align: center;
+    color: #fff; /* Text color */
+    text-transform: uppercase; /* Transform text to uppercase */
+    border-bottom: var(--first-color) solid ; /* Add a solid underline */
+    padding-bottom: 10px; /* Add space between text and underline */
+    font-weight: bold; /* Make text bold */
 }
+
 .header {
     position: fixed;
     top: 0;
