@@ -143,7 +143,7 @@ section {
 
 .hme-img {
     position: relative;
-    padding-left: 8rem;
+    padding-left: 7rem;
     width: 35rem;
     height: 35rem;
     border-radius: 50%;
@@ -151,7 +151,7 @@ section {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 30%;
   
 }
@@ -159,7 +159,7 @@ section {
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    border: .2rem solid var(--main-color);
+    border: 1rem solid var(--second-color);
     
 }
 
@@ -229,7 +229,7 @@ section {
 .about-content {
     
     text-align: center;
-    border: .2rem solid var(--second-color);
+    border: 2rem solid var(--second-color);
     padding: 2rem;
 }
 
@@ -260,7 +260,7 @@ section {
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    border: .2rem solid var(--main-color);
+    border: 1rem solid var(--second-color);
 }
 
 .circle-animate {
@@ -305,6 +305,8 @@ section {
     transition: opacity 0.8s ease;
     z-index: -1;
 } 
+
+
 
 .circle-animate:hover p {
     opacity: 1;
@@ -517,6 +519,7 @@ section {
     gap: 10px
 }
 .work img {
+    opacity: 0.5;
     width: 100%;
     max-width: 300px;
     border-radius: 50%;
