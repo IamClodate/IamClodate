@@ -8,7 +8,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    border: #fff solid;
+   
     
     
 }
@@ -25,7 +25,7 @@ html {
     overflow-x:hidden;
 }
 body {
-    background-image: url(https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/129325364/original/afaddcb9d7dfaaf5bff7ef04101935814665ac16/design-an-attractive-background-for-your-website.png);
+    background-image: url(https://www.creativefabrica.com/wp-content/uploads/2022/11/25/Green-Black-Luxury-Abstract-Background-Graphics-48480341-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -580,7 +580,7 @@ section {
     text-align: center;
     width: 35rem;
     height: 35rem;
-    border-radius: 100%;
+    border-radius: 50%;
     overflow: hidden;
     margin: 1rem;
     z-index: 1;
@@ -601,6 +601,7 @@ section {
     padding-bottom: 7rem;
     font-size: 2rem;
     
+    
 }
 .contact-row {
     display: flex;
@@ -609,11 +610,15 @@ section {
     justify-content: center;
     border: var(--second-color) solid;
 }
-.contact-left{
-   width: 400px;
-   text-align: left;
 
+.contact-left {
+    flex-basis: 35%;
+    height: 35rem;
+    overflow: hidden;
+    margin-right: 2rem;
+    z-index: 1;
 }
+   
 .sub-title a {
     text-decoration: none;
     font-size: 30px;
@@ -682,7 +687,6 @@ form input,form textarea{
     font-size: 18px;
     border-radius: 6px;
 
-    
 }
 form .btn2{
     padding: 14px 60px;
@@ -718,7 +722,6 @@ form .btn2{
 .copyright i {
     color: var(--first-color);;
 }
-
 
 /* footer */
 .footer {
