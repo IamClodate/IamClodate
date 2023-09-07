@@ -47,6 +47,9 @@ body {
     padding-bottom: 10px; /* Add space between text and underline */
     font-weight: bold; /* Make text bold */
 }
+.title {
+    text-align: center;
+}
 
 .header {
     position: fixed;
@@ -141,8 +144,8 @@ section {
 .hme-img {
     position: relative;
     padding-left: 8rem;
-    width: 25rem;
-    height: 25rem;
+    width: 35rem;
+    height: 35rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -210,6 +213,8 @@ section {
     flex-direction: column;
     gap: 2rem;
     padding-bottom: 6rem;
+    
+    
 }
 
 
@@ -240,8 +245,8 @@ section {
 
 .about-img {
     position: relative;
-    width: 25rem;
-    height: 25rem;
+    width: 35rem;
+    height: 35rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -261,11 +266,11 @@ section {
 .circle-animate {
     display: inline-block;
     position: relative;
-    width: 30rem;
-    height: 30rem;
+    width: 35rem;
+    height: 35rem;
     border-radius: 100%;
     overflow: hidden;
-    margin: 1rem;
+    margin: .1rem;
     z-index: 1;
     background-color: var(--second-color);
 
@@ -277,7 +282,7 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    padding: 1rem;
+    padding: .1rem;
     color: var(--text-color);
     /* border-radius: 50%; */
     opacity: 1;  
@@ -586,9 +591,6 @@ section {
     margin: 0;
     width: 100%;
 
-}
-#myrecent {
-    text-align: center !important;
 }
 
 #my-image {
