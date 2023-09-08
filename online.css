@@ -43,7 +43,7 @@ body {
     font-size: 5rem;
     margin-bottom: 3rem;
     text-align: center;
-    color: #fff; /* Text color */
+    color: #fff; 
     text-transform: uppercase; /* Transform text to uppercase */
     border-bottom: var(--first-color) solid ; /* Add a solid underline */
     padding-bottom: 10px; /* Add space between text and underline */
@@ -246,6 +246,7 @@ section {
 
 
 .about-img {
+    opacity: 0.5;
     position: relative;
     width: 35rem;
     height: 35rem;
