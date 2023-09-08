@@ -46,9 +46,12 @@ function validateMessage() {
         messageError.innerHTML = left + ' more characters required';
         return false;
     }
-
-    messageError.innerHTML = '<i class="fas fa-check-circle"></i>';
-    return true;
+    else {
+        alert("form successsfully submitted");
+        messageError.innerHTML = '<i class="fas fa-check-circle"></i>';
+        return true;
+      }
+   
 }
 
 function validateForm(){
@@ -58,6 +61,7 @@ function validateForm(){
         setTimeout(function(){submitError.style.display = 'none';}, 3000);
         return false;
     }
+    
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -104,7 +108,7 @@ var header = document.querySelector('header');
 
 header.classList.toggle('sticky', window.scrollY > 100);
 
-// remove toggle icon  andnavbar when click navbar
+// remove toggle icon  and navbar when click navbar
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 };

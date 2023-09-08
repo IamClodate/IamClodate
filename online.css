@@ -25,15 +25,17 @@ html {
     overflow-x:hidden;
 }
 body {
+    /* content: ''; */
     background-image: url(https://www.creativefabrica.com/wp-content/uploads/2022/11/25/Green-Black-Luxury-Abstract-Background-Graphics-48480341-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    /* position: relative */
     /* color: var(--text-color); */
 }
 /* .heading {
     font-size: 5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3rem;s
     text-align: center;
 } */
 
@@ -412,16 +414,6 @@ section {
     font-size: 1.8rem;
     text-align: center;
 }
-.work {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-.work img {
-  max-width: 100%;
-  height: 100%;
-  
-}
 .work:hover img {
   filter: grayscale(100%);
 }
@@ -444,7 +436,7 @@ section {
     font-size: 2rem; 
     text-align: center;
 } */
-.portfolio-row h2 {
+.portfolio-row h3 {
     font-size: 2rem;
     text-align: center;
 }
@@ -507,8 +499,24 @@ section {
     grid-gap: 40px;
     margin-top: 50px;
 }
+/* 
+#mywork {
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1rem;
+    z-index: 1;
+    border: var(--second-color);
+    background: var(--second-color);
+} */
 .work{
-    border-radius: 10px;
+    border-radius: 50%;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -518,12 +526,24 @@ section {
     /* grid-template-columns: repeat(2, 1fr); */
     gap: 10px
 }
+
+/* 
+.work {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  } */
+  .work img {
+    max-width: 100%;
+    height: 100%;
+    
+  }
 .work img {
     opacity: 0.5;
     width: 100%;
     max-width: 300px;
     border-radius: 50%;
-    display: block;
+    display: relative;
     transition: transform 0.5s;
 }
 
@@ -734,7 +754,7 @@ form .btn2{
 .input-group span i {
     color: var(--second-color);
 }
-.copyright p{
+.copyright p {
     width: 100%;
     text-align: center;
     padding: 25px 0;
