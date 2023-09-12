@@ -85,15 +85,15 @@ menuIcon.onclick = () => {
 
 /* scroll sections active Links */
 
-var sections = document.querySelectorAll('section');
-var navLinks = document.querySelectorAll('header nav a');
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
     sections.forEach(sec => {
-        var top = window.scrollY;
-        var offset = sec.offsetTop - 150;
-        var height = sec.offsetHeight;
-        var id = sec.getAttribute('id');
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
 
         if(top >= offset && top < offset + height) {
             navLinks.forEach(links => {
@@ -127,7 +127,7 @@ ScrollReveal().reveal('home-content p, .about-content', { origin: 'right'});
 
 // typed js
 const typed = new Typed('.heading', {
-    strings: ['Welcome','to','my','WorkSpace'],
+    strings: ['Welcome','to my','WorkSpace'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
