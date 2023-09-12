@@ -74,8 +74,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // toggle icon navbar
-var menuIcon = document.querySelector('#menu-icon');
-var navbar = document.querySelector('.navbar');
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
@@ -104,7 +104,7 @@ window.onscroll = () => {
     });
 
 // sticky navbar
-var header = document.querySelector('header');
+let header = document.querySelector('header');
 
 header.classList.toggle('sticky', window.scrollY > 100);
 

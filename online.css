@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 *{
     margin: 20;
     padding: 0;
@@ -22,7 +23,7 @@
 }
 html {
     font-size: 62.5%;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 body {
     /* content: ''; */
@@ -72,6 +73,7 @@ body {
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
+
 }
 .navbar a {
     font-size: 1.9rem;
@@ -500,22 +502,7 @@ section {
     grid-gap: 40px;
     margin-top: 50px;
 }
-/* 
-#mywork {
 
-    display: flex;
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    width: 35rem;
-    height: 35rem;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 1rem;
-    z-index: 1;
-    border: var(--second-color);
-    background: var(--second-color);
-} */
 .work{
     border-radius: 50%;
     position: relative;
@@ -744,13 +731,14 @@ form .btn2{
 .input-group span {
     position: relative;
     bottom: 12px;
-    right: 17px;
+    left: 17px;
     font-size: 14px;
     color: red;
 }
 
 #submit-error {
     color: red;
+    text-align: center;
 }
 .input-group span i {
     color: var(--second-color);
