@@ -424,6 +424,13 @@ section {
 .portfolio-row {
     border: var(--second-color) solid;
 }
+/* .portfolio-row h3 {
+    font-size: 3rem;
+    color: var(--second-color);
+} */
+.portfolio-row p{
+    font-size: 1.8rem;
+}
 .portfolio-row h1 {
     font-size: 1.8rem; 
     text-align: center;
@@ -438,8 +445,10 @@ section {
     font-size: 2rem;
     text-align: center;
 }
+
+
 .portfolio .portfolio-row {
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     gap: 5rem;
 }
@@ -510,12 +519,6 @@ section {
     gap: 10px
 }
 
-/* 
-.work {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  } */
   .work img {
     max-width: 100%;
     height: 100%;
@@ -573,6 +576,17 @@ section {
     height: 100%;
 }
 
+
+.portfolio-row h3{
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.paragraph {
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
 .btn {
     font-size: 2rem;
     display: block;
