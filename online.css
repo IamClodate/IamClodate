@@ -10,8 +10,6 @@
     outline: none;
     scroll-behavior: smooth;
    
-    
-    
 }
 :root {
     --first-color:yellow ;
@@ -143,8 +141,6 @@ section {
     text-align: left;
 }
 
-
-
 .hme-img {
     position: relative;
     padding-left: 7rem;
@@ -189,7 +185,7 @@ section {
 .navbars{
     position: fixed;
     width: 100%;
-    top:0;
+    top: 0;
 }
 
 .btn {
@@ -200,6 +196,7 @@ section {
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
+    letter-spacing: .1rem;
     color: var(--text-color);
     transition:  background 0.5s;
 }
@@ -217,8 +214,6 @@ section {
     flex-direction: column;
     gap: 2rem;
     padding-bottom: 6rem;
-    
-    
 }
 
 
@@ -243,7 +238,7 @@ section {
 
 .about-content p {
     font-size: 1.6rem;
-    margin: 2rem 0 3rem;
+    margin: 2rem 0 8rem;
 }
 
 
@@ -292,16 +287,16 @@ section {
     /* border-radius: 50%; */
     opacity: 1;  
 
-    width: 25rem;
-    height: 25rem;
+    width: 32rem;
+    height: 30rem;
     /* transition: opacity 0.3s ease; */
 }
 .glamour-hover {
-    /* position: absolute; */
+    position: relative;
     /* top: 50%; */
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align:justify;
     padding: 1rem;
     /* background-color: var(--second-color); */
     /* border-radius: 50%; */
@@ -336,8 +331,8 @@ section {
 }
 
 .about-content p {
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
+    font-size: .3rem;
+    margin: 0 0 .1rem;
 }
 
 .circle-spin {
