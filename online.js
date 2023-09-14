@@ -47,11 +47,22 @@ function validateMessage() {
         return false;
     }
     else {
-        alert("form successsfully submitted");
         messageError.innerHTML = '<i class="fas fa-check-circle"></i>';
+        alert("form successsfully submitted");
         return true;
       }
    
+}
+
+
+let popup = document.getElementById("popup");
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+
+function closePopup(){
+    popup.classList.remove("open-popup")
 }
 
 function validateForm(){

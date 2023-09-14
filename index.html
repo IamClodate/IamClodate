@@ -251,7 +251,7 @@
                         <div class="image1"><img src="printdcreen/myweb.png"></div>
                         <div class="layer">
                             <h3 style="border-bottom: .5rem solid yellow;">Portfolio Website</h3>
-                            <p style="font-size: large;">This is my portfolio website, I created using html, css and javascript</p>
+                            <p style="font-size: large;">This website serves as my portfolio, crafted using HTML, CSS, and JavaScript.</p>
                             <a href="https://clodateportfolio.netlify.app/"><i
                                     class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
@@ -259,9 +259,8 @@
                     <div class="work" id="my-image">
                         <div class="image1"><img src="printdcreen/school.png"></div>
                         <div class="layer">
-                            <h3 style="border-bottom: .5rem solid yellow;">School website</h3>
-                            <p style="font-size: large;">This is a school website that was coded using a varity of programming languages such as
-                                node.js and many more</p>
+                            <h3 style="border-bottom: .5rem solid yellow;">School Website</h3>
+                            <p style="font-size: large;">This school website was developed using a variety of programming languages, including Node.js, among others.</p>
                             <a href="https://celebrated-taffy-669d7c.netlify.app/"><i
                                     class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
@@ -316,7 +315,14 @@
                                     onkeyup="validateMessage()"></textarea>
                                 <span id="message-error"></span>
                             </div>
-                            <button type="submit" sendMessage() document.write(contact-form) class="btn btn2">Enter</button>
+                            
+                            <button type="submit" onclick="openPopup()" document.write(contact-form) class="btn btn2">Enter</button>
+                            <div class="popup" id="popup">
+                                <img src="icons/tick.png">
+                                <h2>Thank You!</h2>
+                                <p>Form has been successfully submitted. Thanks!</p>
+                                <button type="button" onclick="closePopup()">Ok</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -324,7 +330,7 @@
         </section>
         <footer class="footer">
             <div class="footer-text">
-                <p>copyright @Clodate Mnisi, 2023 | All Rights Reserved.</p>
+                <p>Copyright © Clodate Mnisi, 2023. All Rights Reserved.</p>
             </div>
 
             <div class="footer-iconTop">

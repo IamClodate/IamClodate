@@ -744,7 +744,53 @@ form .btn2{
     font-size: 14px;
     color: red;
 }
+.popup {
+    width: 400px;
+    background: var(--main-color);
+    border-radius: 6px;
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: var(--text-color);
+    border: var(--first-color) solid;
+    visibility: hidden;
+    transition: transform 0.4s top 0.4s;
+}
 
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, 50%) scale(1);
+}
+
+.popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: var(--second-color);
+    color: var(--text-color);
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
+}
 #submit-error {
     color: red;
     text-align: center;
@@ -752,6 +798,8 @@ form .btn2{
 .input-group span i {
     color: var(--second-color);
 }
+
+
 .copyright p {
     width: 100%;
     text-align: center;
