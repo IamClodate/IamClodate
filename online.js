@@ -55,15 +55,6 @@ function validateMessage() {
 }
 
 
-let popup = document.getElementById("popup");
-
-function openPopup(){
-    popup.classList.add("open-popup");
-}
-
-function closePopup(){
-    popup.classList.remove("open-popup")
-}
 
 function validateForm(){
     if(!validateName() || !validateEmail() || !validateMessage()){
@@ -82,6 +73,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+let popup = document.getElementById("popup");
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+
+function closePopup(){
+    popup.classList.remove("open-popup")
+}
+
 
 
 // toggle icon navbar
@@ -144,6 +147,8 @@ const typed = new Typed('.heading', {
     backDelay: 1000,
     loop: true
 });
+
+
 
 function formSubmit(e)
 

@@ -98,12 +98,20 @@ section {
     
 }
 .home {
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
     padding: 0 9%;
     
 }
+@media (max-width:768px) {
+    .home-content {
+        margin-top: 20%;
+        max-width: 60rem; 
+    }
+    
+}
 .home-content {
+   
     max-width: 60rem; 
 }
 .home-content h3{
@@ -115,6 +123,7 @@ section {
 }
 .home-content .text-animate {
     position: relative;
+    top:200% ;
     width: 32.8rem;
     
 }
@@ -142,22 +151,22 @@ section {
 }
 
 .hme-img {
-    position: relative;
-    padding-left: 7rem;
-    width: 35rem;
-    height: 35rem;
+    /* position: fixed; */
+    /* padding-left: 7rem; */
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 40%;
+    /* justify-content: center;
+    align-items: center; */
+    /* position: absolute; */
+    /* top: 40%;
     right: 30%;
-  
+   */
 }
 .hme-img img {
-    height: 100%;
-    width: 100%;
+    height: 10%;
+    width: 10%;
     border-radius: 50%;
     border: 1rem solid var(--second-color);
     
@@ -240,8 +249,6 @@ section {
     font-size: 1.6rem;
     margin: 2rem 0 8rem;
 }
-
-
 .about-img {
     opacity: 0.5;
     position: relative;
@@ -306,8 +313,6 @@ section {
     z-index: -1;
 } 
 
-
-
 .circle-animate:hover p {
     opacity: 1;
 }
@@ -355,8 +360,6 @@ section {
     }
 }
 
-
-
 .circle-animate:hover .glamour-hover {
     opacity: 1;
     animation: glamourScale 0.5s ease-out;
@@ -373,7 +376,6 @@ section {
         transform: translate(-50%, -50%) scale(1);
     }
 }
-
 
 .btn {
     display: block;
@@ -716,8 +718,9 @@ section {
     text-decoration: none;
     font-size: 20px;
 }
+
 form input,form textarea{
-    width:100%;
+    width: 90%;
     border:0;
     outline:none;
     background: var(--main-color);
@@ -762,7 +765,8 @@ form .btn2{
 
 .open-popup {
     visibility: visible;
-    top: 50%;
+    /* top: 50%; */
+    position: absolute;
     transform: translate(-50%, 50%) scale(1);
 }
 
@@ -885,13 +889,20 @@ form .btn2{
     }
 }
 @media (max-width: 768px) {
+    .contact-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: var(--second-color) solid;
+    }
     #menu-icon {
         display: block;
     }
     .navbar {
         position: absolute;
         top: 100%;
-        left: 0;
+        left: 0%;
         width: 100%;
         padding: 1rem 3%;
         background: var(--second-color);
@@ -910,7 +921,7 @@ form .btn2{
     }
 
     .home {
-        flex-direction: column;
+        /* flex-direction: column; */
     }
     .home-content h3 {
         font-size: 2.6rem;
@@ -918,8 +929,13 @@ form .btn2{
     .home-content h1 {
         font-size: 5rem;
     }
+    .hme-img {
+        right: 1%;
+        width: 40%;
+        max-width: 200px;
+    }
     .hme-img img {
-        width: 70vw;
+        width: 200px;
         margin-top: 4rem;
     }
     .about img {
@@ -940,11 +956,18 @@ form .btn2{
     .portfolio-row {
         grid-template-columns: 1fr;
     }
+    .hme-img {
+        
+        margin-bottom: 0%;
+        width: 50%;
+        max-width: 150px;
+    }
 }
 @media (max-width:450px) {
     html {
         font-size: 50%;
     }
+   
     .contact form .input-group input {
         width: 100%;
     }
@@ -964,6 +987,8 @@ form .btn2{
         margin-top: 2rem;
     }
 }
+
+
 /* css for small screens
 nav.fa-regular {
     display: none;
