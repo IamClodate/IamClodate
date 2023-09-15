@@ -46,11 +46,10 @@ function validateMessage() {
         messageError.innerHTML = left + ' more characters required';
         return false;
     }
-    else {
+    
         messageError.innerHTML = '<i class="fas fa-check-circle"></i>';
-        alert("form successsfully submitted");
+        // alert("form successsfully submitted");
         return true;
-      }
    
 }
 
@@ -62,6 +61,9 @@ function validateForm(){
         submitError.innerHTML = 'Please fix error to submit';
         setTimeout(function(){submitError.style.display = 'none';}, 3000);
         return false;
+        
+        openPopup();
+
     }
     
 }

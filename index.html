@@ -39,12 +39,12 @@
         </nav>
     </header>
 
-    <section class="home drop" id="home">
+    <section class="home" id="home">
 
 
 
         <div class="home-content ">
-            <h3 class="heading "> Welcome to my WorkSpace</h3>
+            <h3 class="heading"> <br><br>Welcome to my WorkSpace </h3>
             <h2 class="multiple-text"> I am Clodate Mnisi</h2>
             <div class="text-animate">
                 <h3> A FullStack Software Developer</h3>
@@ -66,8 +66,7 @@
             <h3 class="heading"> About Me !</h3>
 
             <div class="about-img">
-
-                <span><img class="circle-spin" src="ME.jpg" alt=""></span>
+                <div><img class="circle-spin" src="ME.jpg" alt="My image"></div>
             </div>
 
             <div class="about-content">
@@ -291,11 +290,11 @@
                                 class="fa-brands fa-linkedin-in"></i></i></a>
 
                     </div>
-                    <a href="https://drive.google.com/file/d/14D1LG7mqtvby_N-OhKh2hJkNeZtmxOvc/view?usp=drive_link" download class="btn btn2"><i class="fa-solid fa-download"></i> Download
-                        CV</a>
+                    
+                    <a href="https://drive.google.com/file/d/14D1LG7mqtvby_N-OhKh2hJkNeZtmxOvc/view?usp=drive_link" download class="btn btn2"><i class="fa-solid fa-download"></i> Download CV</a>
 
                 </div>
-                <div class="contact-right">
+                <div class="contact-right1">
                     <div class="contact-right">
                         <h3>Let's Chat :</h3>
                         <form id="contact-form" onsubmit="return validateForm()">
@@ -317,7 +316,7 @@
                                 <span id="message-error"></span>
                             </div>
                             
-                            <button type="submit" onclick="openPopup()" document.write(contact-form) class="btn btn2">Enter</button>
+                            <button type="submit" onclick=" return validateForm(), openPopup()" document.write(contact-form) class="btn btn2">Enter</button>
                             <div class="popup" id="popup">
                                 <img src="icons/tick.png">
                                 <h2>Thank You!</h2>
