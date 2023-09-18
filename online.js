@@ -142,7 +142,7 @@ ScrollReveal().reveal('home-content h3, .about-img', { origin: 'left'});
 ScrollReveal().reveal('home-content p, .about-content', { origin: 'right'});
 
 // typed js
-const typed = new Typed('.multiple-text', {
+const typed = new Typed('.multiple-text', { 
     strings: ['Welcome','to my','WorkSpace'],
     typeSpeed: 100,
     backSpeed: 1000,
