@@ -928,16 +928,17 @@ form .btn2{
 
 
 @media (max-width: 991px) {
-    .about{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+    
     .header {
         padding: 2rem 3%;
     }
     section {
         padding: 10rem 3% 2rem;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .skills {
         padding-bottom: 7rem;
@@ -963,13 +964,20 @@ form .btn2{
         flex-direction: column;
     }
     .contact-row {
+        width: 80rem;
+        height: 100rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border: var(--second-color) solid;
+        /* border: var(--second-color) solid; */
     }
+    
 
+    /* .contact form {
+        max-width: fit-content;
+        align-items: center;
+    } */
     #menu-icon {
         display: block;
     }
