@@ -692,6 +692,10 @@ section {
     justify-content: center;
     height: 80rem;
     border: var(--second-color) solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
 }
 
 .contact-left {
@@ -714,8 +718,17 @@ section {
     text-align: left;
     width: 60rem;
     height: 65rem;
+    overflow: hidden;
     z-index: 1;
 }
+/* 
+.contact-left {
+    flex-basis: 40%;
+    height: 40rem;
+    overflow: hidden;
+    margin-right: 2rem;
+    z-index: 1;
+} */
 .contact-left p{
     margin-top: 30px;
 }
@@ -794,10 +807,22 @@ form .btn2{
     color: red;
 
 }
-
-.input-group #contact-name{
-    max-width: 100%;
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    max-width: 550px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
+/* .input-group #contact-name{
+    : 100%;
+    
+    
+
+} */
 .popup {
     width: 400px;
     background: var(--main-color);
@@ -920,17 +945,64 @@ form .btn2{
 }
 /* responsiveness */
 
-@media (max-width: 1200px) {
-    html {
-        font-size: 55%;
+
+
+@media (max-width: 768px) {
+    .input-group input,
+    .input-group textarea {
+        font-size: 14px;
+        max-width:320px;
+    }
+    .contact-row{
+        max-width:340px;
+    }
+    .popup {
+        max-width: 60%; /* Adjust maximum width for smaller screens */
+        left: 50%;
+        top: 50%;
+        right:50%;
+        transform: translate(-75%, -50%) scale(1);
+        text-align: center; 
+    }
+
+    .popup img {
+        width: 70px; /* Adjust image size for smaller screens */
     }
 }
 
 
+
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .contact-left,
+    .contact-right1 {
+        width: 100%; /* Take up the full width on smaller screens */
+        margin-right: 0; /* Remove spacing between contact-left and contact-right1 */
+    }
+    .contact-row{
+        width:100%;
+     
+    }
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+    
+   
+
+}
 @media (max-width: 991px) {
     
     .header {
         padding: 2rem 3%;
+    }
+    .menu-icon {
+      margin-right:70px;
     }
     section {
         padding: 10rem 3% 2rem;
@@ -952,6 +1024,9 @@ form .btn2{
     .footer {
         padding: 2rem 3%;
     }
+    .footer-iconTop {
+        margin-left: 300px;
+    }
 }
 @media (max-width: 768px) {
     .newclass{
@@ -970,8 +1045,9 @@ form .btn2{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* border: var(--second-color) solid; */
+        border: var(--second-color) solid;
     }
+
     
 
     /* .contact form {
@@ -980,6 +1056,8 @@ form .btn2{
     } */
     #menu-icon {
         display: block;
+     
+        margin-right: 120px;
     }
     .navbar {
         position: absolute;
