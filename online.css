@@ -9,6 +9,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
+    border: #3E644F solid;
    
 }
 :root {
@@ -69,7 +70,7 @@ body {
 
 }
 .navbar a {
-    font-size: 1.9rem;
+    font-size: 2rem;
     color: var(--text-color);
     font-weight: 800;
     margin-left: 3.5rem;
@@ -688,12 +689,13 @@ section {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: 80rem;
     border: var(--second-color) solid;
 }
 
 .contact-left {
-    flex-basis: 35%;
-    height: 35rem;
+    flex-basis: 40%;
+    height: 40rem;
     overflow: hidden;
     margin-right: 2rem;
     z-index: 1;
@@ -707,9 +709,11 @@ section {
     display: inline-block;
 }
 .contact-right{
-    /* flex-basis: 60%; */
+    flex-basis: 60%;
     text-align: left;
     width: 60rem;
+    height: 65rem;
+    z-index: 1;
 }
 .contact-left p{
     margin-top: 30px;
@@ -746,6 +750,8 @@ section {
     display: inline-block;
     background: var(--second-color);
     padding: 14px 60px;
+    margin-top: 1rem;
+    
 }
 
 .contact-right form{
@@ -788,7 +794,6 @@ form .btn2{
 
 }
 
-
 .input-group #contact-name{
     max-width: 100%;
 }
@@ -796,9 +801,11 @@ form .btn2{
     width: 400px;
     background: var(--main-color);
     border-radius: 6px;
-    position: relative;
-    top: 0%;
-    left: 50%;
+    position: absolute;
+    margin-bottom: 100%;
+    
+    /* top: 0%; */
+    /* left: 50%; */
     transform: translate(-50%, -50%) scale(0.1);
     text-align: center;
     padding: 0 30px 30px;
@@ -961,6 +968,7 @@ form .btn2{
         justify-content: center;
         border: var(--second-color) solid;
     }
+
     #menu-icon {
         display: block;
     }
