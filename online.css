@@ -40,7 +40,7 @@ body {
     color: #fff; 
     text-transform: uppercase; /* Transform text to uppercase */
     border-bottom: var(--first-color) solid ; /* Add a solid underline */
-    padding-bottom: 10px; /* Add space between text and underline */
+    padding-bottom: 10px;  /*Add space between text and underline */
     font-weight: bold; /* Make text bold */
 }
 .title {
@@ -845,6 +845,7 @@ form .btn2{
 }
 .input-group span i {
     color: var(--second-color);
+    
 }
 
 .input-group{
