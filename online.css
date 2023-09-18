@@ -1003,15 +1003,20 @@ form .btn2{
     .home-content h1 {
         font-size: 5rem;
     }
-    .hme-img {
-        right: 1%;
-        width: 40%;
-        max-width: 200px;
-    }
-    .hme-img img {
-        width: 200px;
+    .home img {
+        width: 70vw;
         margin-top: 4rem;
     }
+    /* .hme-img {
+        right: 1%;
+        width: 50%;
+        height: 50%;
+        max-width: 200px;
+    } */
+    /* .hme-img img {
+        width: 200px;
+        margin-top: 4rem;
+    } */
     .about img {
         width: 70vw;
         margin-top: 4rem;
@@ -1025,10 +1030,13 @@ form .btn2{
     .portfolio-row {
         grid-template-columns: repeat(2,1fr);
     }
+
+
+
 }
 @media (max-width: 617px) {
     .portfolio-row {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr)
     }
     .hme-img {
         
