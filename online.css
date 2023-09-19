@@ -336,6 +336,26 @@ section {
     justify-content: center;
     margin: 2rem 0 8rem;
 }
+/* .about-img {
+    opacity: 1;
+    position: relative;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* position: absolute; */
+    /* left: 5%;
+}
+
+.about-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 1rem solid var(--second-color);
+} */
+
 .about-img {
     opacity: 1;
     position: relative;
@@ -345,16 +365,18 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: absolute; */
     left: 5%;
+    overflow: hidden; /* Hide any part of the image that exceeds the circular container */
 }
 
 .about-img img {
     height: 100%;
     width: 100%;
+    object-fit: cover; /* Maintain the image's aspect ratio and cover the entire container */
     border-radius: 50%;
     border: 1rem solid var(--second-color);
 }
+
 
 .circle-animate {
     display: inline-block;
