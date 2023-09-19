@@ -381,6 +381,13 @@ section {
     padding: 2rem;
 }
 
+/* 
+.about-content {
+    
+    text-align: center;
+    border: 2rem solid var(--second-color);
+    padding: 2rem;
+} */
 .about-content h3 {
     font-size: 2.6rem;
 }
@@ -1065,7 +1072,16 @@ form .btn2{
         /* margin-top: 4rem; */
         border-radius: 50%;
         
+        
     }
+
+    .about-content {
+        text-align: center;
+        border: .2rem solid var(--second-color);
+        padding: 5rem;
+    
+    }
+
     .skills {
         padding-bottom: 7rem;
     }
