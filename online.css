@@ -422,13 +422,13 @@ section {
     padding: 19px;
 }
 .education-column h3 {
-    font-size: 1.5rem; 
+    font-size: 2rem; 
     text-align: center;
 }
 
 .container p {
-    font-size: 1rem;
-    text-align: justify;
+    font-size: 1.8rem;
+    text-align: center;
 }
 .work:hover img {
   filter: grayscale(100%);
