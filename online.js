@@ -129,6 +129,14 @@ header.classList.toggle('sticky', window.scrollY > 100);
     navbar.classList.remove('active');
 };
 
+// Add this code after your existing JavaScript code
+document.querySelectorAll('header nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        menuIcon.classList.remove('bx-x');
+        navbar.classList.remove('active');
+    });
+});
+
 // scroll reveal
 ScrollReveal({ 
     // reset: true,
