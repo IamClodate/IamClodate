@@ -699,7 +699,7 @@ section {
     margin-right: 15px;
     display: inline-block;
     border: 1rem solid var(--second-color);
-    border-radius: 50px;
+    border-radius: 50%;
     background: var(--second-color);
     transition: transform 0.5s;
 }
@@ -709,7 +709,6 @@ section {
     transform: translateY(-5px);
     border: 1rem solid var(--first-color);
 }
-
 
 .btn.btn2 {
     
