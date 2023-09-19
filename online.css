@@ -160,8 +160,30 @@ section {
 }
 
 
-.hme-img {
+/* .hme-img {
     padding-left: 7rem;
+    padding: 12%;
+    position: relative;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 5%; */
+    /* left: 9%; */
+
+/* }
+
+.hme-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 1rem solid var(--second-color);
+} */
+
+.hme-img {
     padding: 12%;
     position: relative;
     width: 35rem;
@@ -173,7 +195,7 @@ section {
     position: relative;
     right: 5%;
     /* left: 9%; */
-
+    overflow: hidden; /* Hide any part of the image that exceeds the circular container */
 }
 
 .hme-img img {
@@ -181,6 +203,7 @@ section {
     width: 100%;
     border-radius: 50%;
     border: 1rem solid var(--second-color);
+    object-fit: cover; /* Maintain the image's aspect ratio and cover the entire container */
 }
 
 
