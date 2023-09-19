@@ -297,7 +297,8 @@ section {
 }
 
 .about-content p {
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
+    justify-content: center;
     margin: 2rem 0 8rem;
 }
 .about-img {
