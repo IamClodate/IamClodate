@@ -132,7 +132,7 @@ header.classList.toggle('sticky', window.scrollY > 100);
 // scroll reveal
 ScrollReveal({ 
     // reset: true,
-    distance: '80px',
+    distance: '200px',
     duration: 2000,
     delay:200 
 });
