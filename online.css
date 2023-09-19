@@ -25,14 +25,17 @@ html {
     overflow-x: hidden;
 }
 body {
+
     /* content: ''; */
-    background-image: url(https://www.creativefabrica.com/wp-content/uploads/2022/11/25/Green-Black-Luxury-Abstract-Background-Graphics-48480341-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background: rgba(0,0,0,0.7)  url(images/bg-.jpeg);
+    
     /* position: relative */
     /* color: var(--text-color); */
 }
+
 
 .heading {
     font-size: 5rem;
@@ -40,10 +43,10 @@ body {
     text-align: center;
     /* background: var(--second-color); */
     color: #fff; 
-    text-transform: uppercase; /* Transform text to uppercase */
-    border-bottom: var(--first-color) solid ; /* Add a solid underline */
-    padding-bottom: 10px;  /*Add space between text and underline */
-    font-weight: bold; /* Make text bold */
+    text-transform: uppercase; 
+    border-bottom: var(--first-color) solid ; 
+    padding-bottom: 10px;  
+    font-weight: bold; 
 }
 .welcome {
     font-size: 5rem;
@@ -290,6 +293,7 @@ section {
     text-align: center;
     border: 2rem solid var(--second-color);
     padding: 2rem;
+    background-color: rgba(0,0,0,0.3);
 }
 
 .about-content h3 {
@@ -302,7 +306,7 @@ section {
     margin: 2rem 0 8rem;
 }
 .about-img {
-    opacity: 0.5;
+    opacity: 1;
     position: relative;
     width: 35rem;
     height: 35rem;
@@ -419,7 +423,7 @@ section {
 }
 
 .circle-animate:hover .glamour-hover {
-    opacity: 1;
+    /* opacity: 1; */
     animation: glamourScale 0.5s ease-out;
 }
 
@@ -462,6 +466,8 @@ section {
 }
 .education-column {
     border: var(--second-color) solid;
+    background-color: rgba(0,0,0,0.3);
+    padding: 19px;
 }
 .education-column h3 {
     font-size: 2rem; 
@@ -483,6 +489,7 @@ section {
 }
 .portfolio-row {
     border: var(--second-color) solid;
+    background-color: rgba(0,0,0,0.4);
 }
 /* .portfolio-row h3 {
     font-size: 3rem;
@@ -525,6 +532,7 @@ section {
     border: .2rem solid var(--main-color);
     border-radius: .6rem;
     padding: .5rem 1.5rem;
+    
 }
 .portfolio-content .progress {
     padding: 1rem 0;
@@ -585,7 +593,7 @@ section {
     
   }
 .work img {
-    opacity: 0.5;
+    opacity: 0.8;
     width: 100%;
     max-width: 300px;
     border-radius: 50%;
@@ -714,6 +722,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    background-color: rgba(0,0,0,0.3);
     
 }
 
