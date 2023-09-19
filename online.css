@@ -93,6 +93,10 @@ body {
 .navbar a.active {
     color:var(--first-color);
 }
+.navbar a.active {
+    color: var(--first-color); /* Change the color to yellow */
+}
+
 .btn {
     background: var(--second-color);
 }

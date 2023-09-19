@@ -137,6 +137,23 @@ document.querySelectorAll('header nav a').forEach(link => {
     });
 });
 
+document.querySelectorAll('header nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        // Remove the 'active' class from all links
+        document.querySelectorAll('header nav a').forEach(link => {
+            link.classList.remove('active');
+        });
+
+        // Add the 'active' class to the clicked link
+        link.classList.add('active');
+
+        // Close the menu (if open)
+        menuIcon.classList.remove('bx-x');
+        navbar.classList.remove('active');
+    });
+});
+
+
 // scroll reveal
 ScrollReveal({ 
     // reset: true,
