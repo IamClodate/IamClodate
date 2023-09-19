@@ -161,7 +161,6 @@ section {
 
 
 .hme-img {
-    /* opacity: 0.5; */
     padding-left: 7rem;
     padding: 12%;
     position: relative;
@@ -302,7 +301,7 @@ section {
     text-align: center;
     border: 2rem solid var(--second-color);
     padding: 2rem;
-    background-color: rgba(0,0,0,0.3);
+   
 }
 
 .about-content h3 {
@@ -498,7 +497,7 @@ section {
 }
 .portfolio-row {
     border: var(--second-color) solid;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.3);
 }
 /* .portfolio-row h3 {
     font-size: 3rem;
