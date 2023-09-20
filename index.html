@@ -10,6 +10,8 @@
     <script src="https://kit.fontawesome.com/4aedf8f78b.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
 </head>
 
@@ -291,12 +293,14 @@
                     </div>
                     <a href="https://drive.google.com/file/d/14D1LG7mqtvby_N-OhKh2hJkNeZtmxOvc/view?usp=drive_link" class="btn btn2" onclick="window.open(this.href); return false;"><i class="fa-solid fa-download"></i> Download CV</a>
 
+                    <div class="g-recaptcha" data-sitekey="6LfVpTwoAAAAALT7e0VUkTVBjdA2z6Z7sbHzEjBs"></div>
+
 
                 </div>
                 <div class="contact-right1">
                     <div class="contact-right">
                         <h3>Let's Chat :</h3>
-                        <form id="contact-form" onsubmit="return validateForm()">
+                        <form action="https://httpbin.org/post" method="POST" id="contact-form" onsubmit="return validateForm()">
                             <div class="input-group">
                                 <input type="text" name="Name" placeholder="Your Name" id="contact-name"
                                     onkeyup="validateName()">
@@ -315,6 +319,8 @@
                                 <span id="message-error"></span>
                             </div>
                             
+
+
                             <button type="submit" onclick=" return validateForm(), openPopup()" document.write(contact-form) class="btn btn2">Enter</button>
                             <div class="popup" id="popup">
                                 <img src="icons/tick.png">
