@@ -39,7 +39,7 @@ function validateEmail(){
 
 function validateMessage() {
     var message = document.getElementById('contact-message').value;
-    var required = 5;
+    var required = 2;
     var left = required - message.length;
 
     if (left > 0) {
