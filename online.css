@@ -9,16 +9,12 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-   
-   
 }
 :root {
     --first-color:yellow ;
     --second-color: #013220;
     --text-color:#fff;
     --main-color:#3E644F;
-    
-
 }
 html {
     font-size: 62.5%;
@@ -35,7 +31,6 @@ body {
     /* position: relative */
     /* color: var(--text-color); */
 }
-
 
 .heading {
     font-size: 5rem;
@@ -80,7 +75,6 @@ body {
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
-
 }
 .navbar a {
     font-size: 2rem;
@@ -157,8 +151,6 @@ section {
     margin: 2rem 0 4rem;
     text-align: left;
 }
-
-
 
 .hme-img {
     padding: 12%;
@@ -956,6 +948,9 @@ form .btn2{
 
 
 
+
+
+
 @media (max-width: 768px) {
     .contact {
         flex-direction: column; /* Stack elements vertically */
@@ -1109,6 +1104,8 @@ form .btn2{
     }
 
 
+    
+
     .home-content h3 {
         font-size: 2.6rem;
     }
@@ -1161,6 +1158,7 @@ form .btn2{
         width: 90vw;
 
     }
+    
     .about-img img {
         width: 90vw;
     }
@@ -1174,33 +1172,3 @@ form .btn2{
 }
 
 
-/* css for small screens
-nav.fa-regular {
-    display: none;
-    font-size: 25px;
-}
-
-nav ul {
-    background: #47576b;
-    position: fixed;
-    top: 0;
-    right: -200px;
-    width: 200px;
-    height: 100vh;
-    padding-top: 50px;
-}
-nav ul li {
-    display: block;
-    margin: 25px;
-}
-nav ul .fa-regular {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: pointer;
-}
-@media only screen and (max-width:600px){
-    .header-text {
-        margin-top: 0;
-    }
-}

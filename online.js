@@ -119,23 +119,17 @@ window.onscroll = () => {
         };
     });
 
-// sticky navbar
+
 let header = document.querySelector('header');
 
 header.classList.toggle('sticky', window.scrollY > 100);
 
-// remove toggle icon  and navbar when click navbar
+
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
 
-// Add this code after your existing JavaScript code
-// document.querySelectorAll('header nav a').forEach(link => {
-//     link.addEventListener('click', () => {
-//         menuIcon.classList.remove('bx-x');
-//         navbar.classList.remove('active');
-//     });
-// });
+
 
 document.querySelectorAll('header nav a').forEach(link => {
     link.addEventListener('click', () => {
@@ -147,7 +141,7 @@ document.querySelectorAll('header nav a').forEach(link => {
         // Add the 'active' class to the clicked link
         link.classList.add('active');
 
-        // Close the menu (if open)
+        
         menuIcon.classList.remove('bx-x');
         navbar.classList.remove('active');
     });
@@ -193,6 +187,29 @@ function formSubmit(e)
 
              }
 
-           
+          
+             const axios = require('axios');
 
+             // Get the user's reCAPTCHA response from the form submission
+             const userResponse = req.body['g-recaptcha-response'];
+             
+             // Verify the reCAPTCHA response with Google
+             axios.post('https://www.google.com/recaptcha/api/siteverify', null, {
+               params: {
+                 secret: '6LeY7zwoAAAAADQ4iBP4ri7iRuke-CuEGZ_3gGqs',
+                 response: userResponse,
+               },
+             })
+             .then(response => {
+               const result = response.data;
+               if (result.success) {
+                 // reCAPTCHA verification passed, process the form
+               } else {
+                 // reCAPTCHA verification failed, handle the error
+               }
+             })
+             .catch(error => {
+               // Handle the error
+             });
+             
              
