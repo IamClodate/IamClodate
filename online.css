@@ -892,6 +892,41 @@ form .btn2{
 /* responsiveness */
 
 
+/* Default styles for larger screens */
+
+/* Add your existing CSS styles here */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+
+    .portfolio-row {
+        flex-direction: column; /* Change to a single column layout */
+        align-items: center; /* Center align the content */
+    }
+
+    .work {
+        width: 80%; /* Adjust the width of the circular elements */
+        margin: 1rem auto; /* Center align the circular elements and add spacing between them */
+    }
+
+    .portfolio-column {
+        flex: 1 1 100%; /* Full width for smaller screens */
+    }
+
+    .layer {
+        font-size: 14px; /* Reduce font size for smaller screens */
+        padding: 0 20px; /* Adjust padding for smaller screens */
+    }
+
+    .btn {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+
+    /* You can add more specific styles as needed for responsiveness */
+}
+
+
 
 @media (max-width: 768px) {
     .input-group input,
