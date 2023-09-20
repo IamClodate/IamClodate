@@ -70,11 +70,12 @@
                             <p class="glamour-hover " style="font-size: 2rem;" ><span style="border-bottom: #fff solid;">1.Professional Profile:</span><br>
                                 <br>I am a dedicated and professional individual who turns challenges into opportunities. 
                                 I am known for my collaborative, self-driven nature and constant pursuit of growth.
+                            </p>
  
 
 
 
-</p>
+
                         </span>
                     </div>
                     <div class="circle">
@@ -117,10 +118,6 @@
             <h3 class="heading">My Skills</h3>
 
            
-            
-
-            
-
             <div class="education-column">
                 <h3 class="title">My Expertise :</h3>
 
@@ -294,7 +291,6 @@
                     </div>
                     <a href="https://drive.google.com/file/d/14D1LG7mqtvby_N-OhKh2hJkNeZtmxOvc/view?usp=drive_link" class="btn btn2" onclick="window.open(this.href); return false;"><i class="fa-solid fa-download"></i> Download CV</a>
 
-                    <!-- <a href="https://drive.google.com/file/d/14D1LG7mqtvby_N-OhKh2hJkNeZtmxOvc/view?usp=drive_link" download class="btn btn2"><i class="fa-solid fa-download"></i> Download CV</a> -->
 
                 </div>
                 <div class="contact-right1">
@@ -351,10 +347,8 @@
         <script type="module">
             // Import the functions you need from the SDKs you need
             import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
-            // TODO: Add SDKs for Firebase products that you want to use
-            // https://firebase.google.com/docs/web/setup#available-libraries
-          
-            // Your web app's Firebase configuration
+            
+            //  web app's Firebase configuration
             const firebaseConfig = {
               apiKey: "AIzaSyBBie1jeztxcqqnmpjz2eg2nu0obgyXMjI",
               authDomain: "myfire-27305.firebaseapp.com",
@@ -371,9 +365,7 @@
 
 const database = getDatabase();
 
-      //listen for submit event
-
-      // this following line helps us access the elements of the form
+      
 
       document.getElementById("contact-form").addEventListener('submit',formSubmit);
 
@@ -383,7 +375,7 @@ const database = getDatabase();
 
                  e.preventDefault();
 
-                 //Get values of each input field from the form
+                
 
                  let name = document.querySelector('#contact-name').value;
                  let email = document.querySelector('#contact-email').value;
@@ -415,12 +407,6 @@ const database = getDatabase();
                  })
 
                  .then(() => {
-
-               //Show Alert Message(5)
-
-            //  document.querySelector('.alert').style.display = 'block';
-
-             //Hide Alert Message After Seven Seconds(6)
 
            
 

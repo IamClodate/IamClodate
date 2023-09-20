@@ -747,7 +747,9 @@ form .btn2{
     margin-top: .2rem;
     cursor: pointer;
     border-radius: 6px;
-    margin-left: 119px;
+    margin-left: 175px;
+    align-items: center;
+    /* margin: center; */
 }
 
 .input-group span {
