@@ -164,7 +164,7 @@ ScrollReveal().reveal('home-content p, .about-content', { origin: 'right'});
 const typed = new Typed('.multiple-text', { 
     strings: ['Welcome','to my','WorkSpace'],
     typeSpeed: 100,
-    backSpeed: 1000,
+    backSpeed: 10,
     backDelay: 100,
     loop: true
 });
