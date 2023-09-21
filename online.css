@@ -1033,11 +1033,10 @@ form .btn2{
     .header {
         padding: 2rem 3%;
     }
-    .menu-icon {
-        display: block;
-        margin-right: 80px;
+    #menu-icon {
+        display: inline-block;
     }
-   
+
     section {
         padding: 10rem 3% 2rem;
     }
