@@ -617,7 +617,7 @@ section {
 }
 
 /* contact */
-.contact {
+/* #contact {
     min-height: auto;
     padding-bottom: 7rem;
     font-size: 2rem;
@@ -636,6 +636,7 @@ section {
     align-items: flex-start;
     background-color: rgba(0,0,0,0.3);
     
+    
 }
 
 .contact-left {
@@ -646,8 +647,42 @@ section {
     z-index: 1;
     padding-left: 40px;
     
+} */
+  
+/* work */
+#contact {
+    min-height: auto;
+    padding-bottom: 7rem;
+    font-size: 2rem;
+    justify-content: center;
 }
-   
+
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 65rem;
+    border: var(--second-color) solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.contact-left {
+    flex-basis: 100%;
+    height: 50rem;
+    overflow: hidden;
+    margin-right: 2rem;
+    z-index: 1;
+    padding-left: 40px;
+}
+
+
+/* edit */
+
+
 .sub-title a {
     text-decoration: none;
     font-size: 30px;
@@ -876,51 +911,21 @@ form .btn2{
 }
 /* responsiveness */
 
-/* 
-@media (max-width: 768px) {
-
-    .portfolio-row {
-        flex-direction: column;
-        align-items: center; 
-    }
-
-    .work {
-        width: 80%; 
-        margin: 1rem auto; 
-    }
-
-    .portfolio-column {
-        flex: 1 1 100%; 
-    }
-
-    .layer {
-        font-size: 14px; 
-        padding: 0 20px; 
-    }
-
-    .btn {
-        font-size: 1.5rem; 
-    }
-
-  
-} */
-
-/* Your existing CSS styles.. */
 
 @media screen and (max-width: 768px) {
    
     .layer {
-      height: auto; /* Remove the fixed height on responsiveness */
+      height: auto; 
     }
     .layer h3 {
-      display: block; /* Display the h3 */
+      display: block; 
       
     }
     .layer p {
-      display: none; /* Hide the paragraph */
+      display: none; 
     }
     .layer a {
-      display: block; /* Display the <a> link */
+      display: block; 
       margin-top: 0px;
     }
 
@@ -931,12 +936,13 @@ form .btn2{
         margin-bottom: 2px;
     }
 
-    
 
-  }
+  
   
 
-@media (max-width: 768px) {
+  
+
+/* @media (max-width: 768px) {
     .input-group input,
     .input-group textarea {
         font-size: 14px;
@@ -945,44 +951,31 @@ form .btn2{
     .contact-row{
         max-width:340px;
     }
-    .popup {
-        max-width: 60%; /* Adjust maximum width for smaller screens */
-        left: 50%;
-        top: 50%;
-        right:50%;
-        transform: translate(-75%, -50%) scale(1);
-        text-align: center; 
-    }
+    
+ */
 
-    .popup img {
-        width: 70px; /* Adjust image size for smaller screens */
-    }
-}
+/* @media (max-width: 768px) {
 
-
-
-
-
-
-@media (max-width: 768px) {
-    .contact {
-        flex-direction: column; /* Stack elements vertically */
+    
+    .contact-row {
+        flex-direction: column;
+        height: 200rem;
+      }
+    
+      .contact-left,
+      .contact-right {
+        width: 100%;
         
-    }
-
-    .contact-left,
-    .contact-right {
-        width: 100%; 
-        height: 100%;
-        margin-right: 0;
-        padding: 10px;
-        border: .1rem solid green;
-    }
-  
-    .contact-row{
-        width:100%;
+        margin-bottom: 2px;
+      }
+    
+      .contact-left .social-icons {
+        text-align: center;
+      }
+    
      
-    }
+       */
+    
 
 
 /* neeewe */
@@ -1002,7 +995,6 @@ form .btn2{
     overflow: hidden; 
 }
 
-
 .hme-img img {
     height: 50%;
     width: 50%;
@@ -1011,21 +1003,76 @@ form .btn2{
     object-fit: cover; 
 }
 
-
-
 }
 
-   
 
+/* work */
 
+@media screen and (max-width: 768px) {
+    .popup {
+        width: 80%; /* Adjust the width as needed */
+        max-width: 400px; /* Set a maximum width if desired */
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        bottom: auto;
+    }
+}
+@media (max-width: 768px) {
+    .contact-row {
+        flex-direction: column; 
+        height: auto; 
+        padding: 10%;
+    }
 
+    .contact-left {
+        margin-right: 0;
+        padding-left: 0;
+    }
+
+    .contact-right {
+        width: 100%; 
+    }
+
+    .contact-right form .btn2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* @media (max-width: 768px) {
+        .contact-right form .btn2 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }   
+    */
+    /* .popup {
+        margin-right: 0;
+        padding-left: 0;
+        width: 60%; /* Adjust the width for smaller screens */
+        /* padding: 0 20px 20px; Adjust padding for smaller screens */
+    
+}
+    
+    /* .popup {
+        max-width: 60%; 
+        left: 50%;
+        top: 50%;
+        right:50%;
+        transform: translate(-75%, -50%) scale(1);
+        text-align: center; 
+    }
+
+    .popup img {
+        width: 70px; 
+    } */
+
+/* work */
 
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
     }
-    
-   
 
 }
 @media (max-width: 991px) {
@@ -1033,17 +1080,13 @@ form .btn2{
     .header {
         padding: 2rem 3%;
     }
-    #menu-icon {
-        display: inline-block;
-    }
-
     section {
         padding: 10rem 3% 2rem;
     }
     
-    .hme-img {
+    /* .hme-img {
         display: block;
-    }
+    } */
     .about{
         display: flex;
         flex-direction: column;
@@ -1083,9 +1126,7 @@ form .btn2{
 }
 @media (max-width: 768px) {
     
-    /* .menu-icon {
-        margin-right: 70px;
-      } */
+   
         #menu-icon {
             display: inline-block;
         }
@@ -1099,6 +1140,7 @@ form .btn2{
         display: flex;
         flex-direction: column;
     }
+/*   
     .contact-row {
         width: 80rem;
         height: 100rem;
@@ -1109,7 +1151,7 @@ form .btn2{
         border: var(--second-color) solid;
     }
 
-    
+     */
     .navbar {
         position: absolute;
         top: 100%;
@@ -1130,9 +1172,6 @@ form .btn2{
         font-size: 2rem;
         margin: 3rem 0;
     }
-
-
-    
 
     .home-content h3 {
         font-size: 2.6rem;
@@ -1155,12 +1194,7 @@ form .btn2{
         grid-template-columns: repeat(2,1fr);
     }
 
-
-
 }
-
-
-
 
 @media (max-width: 768px) {
     .about-img {
@@ -1200,7 +1234,7 @@ form .btn2{
         width: 50%;
         max-width: 150px;
     }
-   
+ 
 }
 @media (max-width:450px) {
     html {

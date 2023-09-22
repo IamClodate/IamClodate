@@ -177,7 +177,7 @@ function formSubmit(e)
 
                  e.preventDefault();
 
-                 //Get values of each input field from the form
+               
 
                  let email = document.querySelector('#email').value;
 
@@ -196,7 +196,7 @@ function formSubmit(e)
              // Verify the reCAPTCHA response with Google
              axios.post('https://www.google.com/recaptcha/api/siteverify', null, {
                params: {
-                 secret: '6LeY7zwoAAAAADQ4iBP4ri7iRuke-CuEGZ_3gGqs',
+                 secret: '6Lf-hkIoAAAAAFdXp97jyCPFlnrBagg1CU_m0wEj',
                  response: userResponse,
                },
              })

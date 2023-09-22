@@ -267,6 +267,7 @@
                     </div>
                 </div>
                 <a href="https://github.com/IamClodate" class="btn" target="_blank">See more</a>
+               
 
             </div>
         </section>
@@ -292,48 +293,58 @@
 
                     </div>
                     <a href="https://drive.google.com/file/d/14D1LG7mqtvby_N-OhKh2hJkNeZtmxOvc/view?usp=drive_link" class="btn btn2" onclick="window.open(this.href); return false;"><i class="fa-solid fa-download"></i> Download CV</a>
-
-                    <div class="g-recaptcha" data-sitekey="6LeY7zwoAAAAAPkREGtJPlqzlJKpnpIvDCeXrCgx"></div>
+                    <div class="g-recaptcha" data-sitekey="6Lf-hkIoAAAAAIh05Y-28L4_oLSkwxnlzvgSVuVO"></div>
 
 
 
                 </div>
+
+
+                <!-- work -->
                 
-                    <div class="contact-right">
-                        <h3>Let's Chat :</h3>
-                        <form id="contact-form" onsubmit="return validateForm()">
-                            <div class="input-group">
-                                <input type="text" name="Name" placeholder="Your Name" id="contact-name"
-                                    onkeyup="validateName()">
-                                <span id="name-error">name</span>
-                            </div>
 
-                            <div class="input-group">
-                                <input type="email" name="email" placeholder="Your Email e.g good@hotmail.com" id="contact-email"
-                                    onkeyup="validateEmail()">
-                                <span id="email-error">email</span>
-                            </div>
+                <div class="contact-right">
+                    <h3>Let's Chat :</h3>
+                    <form id="contact-form" onsubmit="return validateForm()">
+                        <div class="input-group">
+                            <input type="text" name="Name" placeholder="Your Name" id="contact-name"
+                                onkeyup="validateName()">
+                            <span id="name-error">name</span>
+                        </div>
 
-                            <div class="input-group">
-                                <textarea name="Message" rows="6" placeholder="Your Message" id="contact-message"
-                                    onkeyup="validateMessage()"></textarea>
-                                <span id="message-error"></span>
-                            </div>
-                            
+                        <div class="input-group">
+                            <input type="email" name="email" placeholder="Your Email e.g good@hotmail.com" id="contact-email"
+                                onkeyup="validateEmail()">
+                            <span id="email-error">email</span>
+                        </div>
 
+                        <div class="input-group">
+                            <textarea name="Message" rows="6" placeholder="Your Message" id="contact-message"
+                                onkeyup="validateMessage()"></textarea>
+                            <span id="message-error"></span>
+                        </div>
+                    
 
-                            <button type="submit" onclick=" return validateForm(), openPopup()" document.write(contact-form) class="btn btn2">Enter</button>
-                            <div class="popup" id="popup">
-                                <img src="icons/tick.png">
-                                <h2>Thank You!</h2>
-                                <p>Form has been successfully submitted. Thanks!</p>
-                                <button type="button" onclick="closePopup()">Ok</button>
-                            </div>
-                        </form>
+                    <div class="btn-btn2">
+
+                        <button type="submit" onclick=" return validateForm(), openPopup()" document.write(contact-form) class="btn btn2">Enter</button>
                     </div>
+                        <div class="popup" id="popup">
+                            <img src="icons/tick.png">
+                            <h2>Thank You!</h2>
+                            <p>Form has been successfully submitted. Thanks!</p>
+                            <button type="button" onclick="closePopup()">Ok</button>
+                        </div>
+                    </form>
+                </div>
+
+
                 </div>
             </div>
         </section>
+
+
+
         <footer class="footer">
             <div class="footer-text">
                 <p>Copyright © Clodate Mnisi, 2023. All Rights Reserved.</p>
