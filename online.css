@@ -678,7 +678,9 @@ section {
     z-index: 1;
     padding-left: 40px;
 }
-
+.contact-left .g-recaptcha {
+    display: block;
+}
 
 /* edit */
 
