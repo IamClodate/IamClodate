@@ -942,43 +942,9 @@ form .btn2{
 
   
 
-/* @media (max-width: 768px) {
-    .input-group input,
-    .input-group textarea {
-        font-size: 14px;
-        max-width:320px;
-    }
-    .contact-row{
-        max-width:340px;
-    }
-    
- */
-
-/* @media (max-width: 768px) {
-
-    
-    .contact-row {
-        flex-direction: column;
-        height: 200rem;
-      }
-    
-      .contact-left,
-      .contact-right {
-        width: 100%;
-        
-        margin-bottom: 2px;
-      }
-    
-      .contact-left .social-icons {
-        text-align: center;
-      }
-    
-     
-       */
-    
 
 
-/* neeewe */
+
 
 .hme-img {
     padding: 60%;
@@ -1006,12 +972,12 @@ form .btn2{
 }
 
 
-/* work */
+
 
 @media screen and (max-width: 768px) {
     .popup {
-        width: 80%; /* Adjust the width as needed */
-        max-width: 400px; /* Set a maximum width if desired */
+        width: 80%;
+        max-width: 400px;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%) scale(1);
@@ -1039,36 +1005,8 @@ form .btn2{
         margin-right: auto;
     }
 
-    /* @media (max-width: 768px) {
-        .contact-right form .btn2 {
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }   
-    */
-    /* .popup {
-        margin-right: 0;
-        padding-left: 0;
-        width: 60%; /* Adjust the width for smaller screens */
-        /* padding: 0 20px 20px; Adjust padding for smaller screens */
-    
+
 }
-    
-    /* .popup {
-        max-width: 60%; 
-        left: 50%;
-        top: 50%;
-        right:50%;
-        transform: translate(-75%, -50%) scale(1);
-        text-align: center; 
-    }
-
-    .popup img {
-        width: 70px; 
-    } */
-
-/* work */
-
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
@@ -1140,18 +1078,7 @@ form .btn2{
         display: flex;
         flex-direction: column;
     }
-/*   
-    .contact-row {
-        width: 80rem;
-        height: 100rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border: var(--second-color) solid;
-    }
 
-     */
     .navbar {
         position: absolute;
         top: 100%;
