@@ -998,6 +998,11 @@ form .btn2{
         padding-left: 0;
     }
 
+    .g-recaptcha {
+        margin-right: 0;
+        padding-left: 0;
+    }
+    
     .contact-right {
         width: 100%; 
     }
