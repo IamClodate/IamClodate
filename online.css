@@ -1162,6 +1162,7 @@ form .btn2{
     .portfolio-row {
         grid-template-columns: repeat(1, 1fr)
     }
+    
     .hme-img {
         
         margin-bottom: 0%;
