@@ -1,5 +1,5 @@
 ### Hi there 👋
 
-This is my second online portfolio that I built using different syntaxes of programming including javascript amoungs others.
+Hello! I'm Clodate, a passionate software engineer dedicated to building efficient, scalable, and user-friendly applications. This portfolio showcases my projects, skills, and contributions using various programming languages and technologies.
 
 -->
