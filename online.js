@@ -61,19 +61,46 @@ function validateForm(){
         submitError.innerHTML = 'Please fix error to submit';
         setTimeout(function(){submitError.style.display = 'none';}, 3000);
         return false;
-        
-        openPopup();
-
     }
-    
+    return true;
+}
+
+async function submitContactForm(event) {
+    event.preventDefault();
+    if (!validateForm()) return;
+
+    const form = event.target;
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: formData
+        });
+
+        if (response.ok) {
+            form.reset();
+            openPopup();
+            submitError.style.display = 'none';
+        } else {
+            const data = await response.json();
+            submitError.style.display = 'block';
+            submitError.innerHTML = 'Unable to send message. Please email me directly.';
+            console.error('Form submit error:', data);
+        }
+    } catch (error) {
+        submitError.style.display = 'block';
+        submitError.innerHTML = 'Network error. Please try again later.';
+        console.error(error);
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        if (!validateForm()) {
-            event.preventDefault();
-        }
-    });
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', submitContactForm);
+    }
 });
 
 
@@ -112,10 +139,9 @@ window.onscroll = () => {
         let id = sec.getAttribute('id');
 
         if(top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a [href*=' + id + ']').classList.add('active');
-            });
+                navLinks.forEach(link => link.classList.remove('active'));
+            const activeLink = document.querySelector('header nav a[href="#' + id + '"]');
+            if (activeLink) activeLink.classList.add('active');
         };
     });
 
@@ -171,45 +197,6 @@ const typed = new Typed('.multiple-text', {
 
 
 
-function formSubmit(e)
 
-             {
-
-                 e.preventDefault();
-
-               
-
-                 let email = document.querySelector('#email').value;
-
-                 let message = document.querySelector('#message').value;
-
-                 sendMessage(email,message);
-
-             }
-
-          
-             const axios = require('axios');
-
-             // Get the user's reCAPTCHA response from the form submission
-             const userResponse = req.body['g-recaptcha-response'];
-             
-             // Verify the reCAPTCHA response with Google
-             axios.post('https://www.google.com/recaptcha/api/siteverify', null, {
-               params: {
-                 secret: '6Lf-hkIoAAAAAFdXp97jyCPFlnrBagg1CU_m0wEj',
-                 response: userResponse,
-               },
-             })
-             .then(response => {
-               const result = response.data;
-               if (result.success) {
-                 // reCAPTCHA verification passed, process the form
-               } else {
-                 // reCAPTCHA verification failed, handle the error
-               }
-             })
-             .catch(error => {
-               // Handle the error
-             });
              
              

@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Clodate Online</title>
+    <title>Clodate Mnisi | Full Stack Developer</title>
+    <meta name="description" content="Clodate Mnisi is a full stack developer focused on building modern web apps, user interfaces, and backend solutions. Contact him for hire.">
     <link rel="stylesheet" href="online.css">
     <script src="https://kit.fontawesome.com/4aedf8f78b.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
 
@@ -45,10 +44,11 @@
             <div class="text-animate">
                 <h3> A FullStack Software Developer</h3>
             </div>
-            <p>Quality work is always guaranteed!<br> "My strong work ethic drives me to consistently deliver nothing
-                less than excellence." <br><br></p>
-                
-
+            <p>Quality work is always guaranteed! My strong work ethic, clean code standards, and eagerness to learn make me a reliable development partner.</p>
+            <div class="home-buttons">
+                <a href="ClodateMResume.pdf" download="ClodateMResume.pdf" class="btn">Download CV</a>
+                <a href="#contact" class="btn btn2">Contact Me</a>
+            </div>
         </div>
 
 
@@ -282,18 +282,15 @@
                 <div class="contact-left">
                     <h1 class="sub-title">Connect with me :</h1>
 
-                    <a href="mailto:clodatemnisi@gmail.com"><i class="fa-regular fa-envelope"></i>clodatemnisi@gmail.com</a><br><br>
+                    <p class="contact-label">Email</p>
+                    <a href="mailto:clodatemnisi@gmail.com"><i class="fa-regular fa-envelope"></i> clodatemnisi@gmail.com</a>
+                    <p class="contact-info">Send a message using the form or email me directly. I reply to employer inquiries quickly.</p>
 
                     <div class="social-icons">
-
                         <a href="https://github.com/IamClodate" target="_blank"><i class="fa-brands fa-github"></i></a>
-
-                                <a href="https://www.linkedin.com/in/iamclodate/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-
-
+                        <a href="https://www.linkedin.com/in/iamclodate/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                     </div>
-                    <a href="https://drive.google.com/file/d/1OcyEbOkiCjNnF_3lT3qJEB0nAd_mF1Jb/view?usp=drive_link" class="btn btn2" onclick="window.open(this.href); return false;"><i class="fa-solid fa-download"></i> Download CV</a>
-                    <div class="g-recaptcha" data-sitekey="6LfVpTwoAAAAALT7e0VUkTVBjdA2z6Z7sbHzEjBs"></div>
+                    <a href="ClodateMResume.pdf" download="ClodateMResume.pdf" class="btn btn2"><i class="fa-solid fa-download"></i> Download CV</a>
 
 
 
@@ -304,34 +301,37 @@
 
                 <div class="contact-right">
                     <h3>Let's Chat :</h3>
-                    <form id="contact-form" onsubmit="return validateForm()">
+                    <form id="contact-form" action="https://formsubmit.co/ajax/clodatemnisi@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New message from portfolio contact form">
+                        <input type="hidden" name="_autoresponse" value="Thanks for reaching out! I’ll reply soon.">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+
                         <div class="input-group">
-                            <input type="text" name="Name" placeholder="Your Name" id="contact-name"
-                                onkeyup="validateName()">
+                            <input type="text" name="Name" placeholder="Your Name" id="contact-name" onkeyup="validateName()">
                             <span id="name-error">name</span>
                         </div>
 
                         <div class="input-group">
-                            <input type="email" name="email" placeholder="Your Email e.g good@hotmail.com" id="contact-email"
-                                onkeyup="validateEmail()">
+                            <input type="email" name="email" placeholder="Your Email e.g good@hotmail.com" id="contact-email" onkeyup="validateEmail()">
                             <span id="email-error">email</span>
                         </div>
 
                         <div class="input-group">
-                            <textarea name="Message" rows="6" placeholder="Your Message" id="contact-message"
-                                onkeyup="validateMessage()"></textarea>
+                            <textarea name="Message" rows="6" placeholder="Your Message" id="contact-message" onkeyup="validateMessage()"></textarea>
                             <span id="message-error"></span>
                         </div>
-                    
 
-                    <div class="btn-btn2">
-                        
-                        <button type="submit" onclick=" return validateForm(), openPopup()" document.write(contact-form) class="btn btn2">Enter</button>
-                    </div>
+                        <div id="submit-error"></div>
+
+                        <div class="btn-btn2">
+                            <button type="submit" class="btn btn2">Send message</button>
+                        </div>
+
                         <div class="popup" id="popup">
-                            <img src="icons/tick.png">
-                            <h2>Thank You!</h2>
-                            <p>Form has been successfully submitted. Thanks!</p>
+                            <img src="icons/tick.png" alt="Success icon">
+                            <h2>Message Sent</h2>
+                            <p>Your note is on its way. I’ll respond as soon as possible.</p>
                             <button type="button" onclick="closePopup()">Ok</button>
                         </div>
                     </form>
@@ -360,83 +360,6 @@
 
         <!-- typed js -->
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-        <script type="module">
-            // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
-            
-            //  web app's Firebase configuration
-            const firebaseConfig = {
-              apiKey: "AIzaSyBBie1jeztxcqqnmpjz2eg2nu0obgyXMjI",
-              authDomain: "myfire-27305.firebaseapp.com",
-              projectId: "myfire-27305",
-              storageBucket: "myfire-27305.appspot.com",
-              messagingSenderId: "465424579527",
-              appId: "1:465424579527:web:0d55108507db8b228037e2"
-            };
-          
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-
-            import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js";
-
-const database = getDatabase();
-
-      
-
-      document.getElementById("contact-form").addEventListener('submit',formSubmit);
-
-            function formSubmit(e)
-
-             {
-
-                 e.preventDefault();
-
-                
-
-                 let name = document.querySelector('#contact-name').value;
-                 let email = document.querySelector('#contact-email').value;
-
-                 let message = document.querySelector('#contact-message').value;
-               
-
-                 sendMessage(name,email,message);
-
-             }
-
-           
-
-             //Send message to firebase
-
-             function sendMessage(name,email,message)
-
-             {
-
-                 const db = getDatabase();
-
-                 set(ref(db, 'users/'+ Math.floor(Math.random()*200000)),{
-                    name:name,
-                     email: email,
-
-
-                     message:message
-
-                 })
-
-                 .then(() => {
-
-           
-
-            document.getElementById('contact-form').reset();
-
-            }).catch((error) => {
-
-             alert(error)
-
-            })  
-
-             }
-          </script>
 
         <script src="online.js"></script>
 
